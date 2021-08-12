@@ -1,6 +1,7 @@
 <?php
 session_start();
 $base = 'http://localhost/menu';
+$user = true;
 
 $db_name = 'menu';
 $db_host = 'localhost';

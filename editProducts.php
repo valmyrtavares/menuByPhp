@@ -10,14 +10,16 @@ require 'partials/header.php';
 ?>
 <div class="content-form">
     <h1>Editar Produto</h1>
-    <form class="form-send" method="POST" action="updateProduct_action.php"?>
+    <form class="form-send" method="POST" enctype="multipart/form-data" action="updateProduct_action.php" >
         <input type="hidden" name="id" value="<?=$id; ?>"/>
         <label>Titulo </label>
             <input type="text" name="title" value="<?=$product->title ?>"/>
         <label>Subtitulo </label>
             <input type="text" name="subtitle" value="<?=$product->subtitle ?>"/>
         <label>imagem </label>
-            <input type="text" name="img" value="<?=$product->img ?>"/>
+            <input type='hidden' name="currentName" value="<?=$product->img;?>"/>
+            <input type="file" name="img" /></br>
+            <img src="<?=$base?>/media/products/<?=$product->img;?>" alt="produto"/>
         <label>Escolha o tipo:</label>
             <select  name="type">
                 <option value="<?=$product->type?>" selected><?=$product->type?></option>

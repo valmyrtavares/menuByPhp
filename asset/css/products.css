@@ -35,6 +35,13 @@
     font-size:22px;
     font-family:monospace;
  }
+ .admin-edit {
+    position: relative;
+    top: 3px;
+    left: 0;
+    font-size: 13px;
+    color: white;
+ }
  [data-type] {
     background:blueviolet;
     margin:2px auto;
@@ -102,4 +109,7 @@ font-family:sans-serif;
     width:60%;
     margin: 15px auto;
     min-height: 30px;
+}
+.form-send img{
+    max-width:100px;
 }
