@@ -34,10 +34,22 @@ class ProductDaoMysql implements ProductDAO {
        $sql->execute();
     }
 
-    public function delete($id){
+    public function delete($id){       
+
+        $sql = $this->pdo->query("SELECT img FROM products WHERE id = $id");        
+        $sql->execute();
+        if($sql->rowCount() > 0){          
+            $data = $sql->fetch(PDO::FETCH_ASSOC);            
+            $img = 'media/products/'.$data['img'];
+            if(file_exists($img)){
+                unlink($img);
+                echo "ENTROU";
+            }
+        }
+
         $sql = $this->pdo->prepare("DELETE FROM products WHERE id = :id");
         $sql->bindValue(':id', $id);
-        $sql->execute();
+        $sql->execute();     
         return true;
     }
 

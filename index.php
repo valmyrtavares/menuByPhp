@@ -54,3 +54,5 @@ $products = $productDao->getProducts();
 
 </body>
 </html>
+
+<!-- @category:debuggers PHP -->

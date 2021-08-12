@@ -14,7 +14,7 @@ require 'partials/header.php'
     <?php foreach($products as $product): ?>
         <div class="products-edit-line">
             <h3><?=$product['title']?></h3>
-            <img src="<?=$product['img']?>"alt="teste"/>
+            <img src="<?=$base;?>/media/products/<?=$product['img']?>"alt="teste"/>
            <!-- <button  onclick="eu()"> <a href="<?=$base;?>/delete.php?id=<?=$product->id;?>"> Excluir intem</a></button> -->
             <a href="<?=$base;?>/delete.php?id=<?=$product['id'];?>" onclick="return confirm('Tem certeza que quer exluir')"> Excluir intem</a>
             <a href="<?=$base;?>/editProducts.php?id=<?=$product['id'];?>">Editar</a>
