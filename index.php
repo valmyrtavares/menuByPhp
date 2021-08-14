@@ -1,8 +1,8 @@
 <?php
 require_once 'config.php';
-require 'partials/header.php';
 require 'dao/ProductDaoMysql.php';
-//require 'asset/js/script.js';
+
+require 'partials/header.php';
 
 $productDao = new ProductDaoMysql($pdo);
 $products = $productDao->getProducts();

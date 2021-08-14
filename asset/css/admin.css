@@ -17,3 +17,14 @@
     font-size: 25px;
     font-family: monospace;
 }
+.content-form-login{
+    width:80%;
+    margin:10px auto;
+    background-color: rgb(167, 164, 164, .3);
+    padding: 10px;
+}
+
+    .content-form-login h1{
+    text-align: center;
+    font-family:sans-serif;
+    }

@@ -14,5 +14,9 @@ require_once 'config.php';
 
    <div class="main-menu">
        <a href="<?=$base;?>">Home</a>
+       <a href="<?=$base;?>/loginCustomer.php">login usuário</a>
+       <a href="<?=$base;?>/login.php">Login</a>
+       <a href="<?=$base;?>/signup_Customer.php">Cliente</a>
+       <a href="<?=$base;?>/signup.php">Cadastrar</a>
        <a href="<?=$base;?>/sendProduct.php">Enviar Produts</a>
    </div>
