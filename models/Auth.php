@@ -1,15 +1,18 @@
 <?php
 require_once 'dao/UserDaoMysql.php';
+require_once 'dao/CustomerDaoMysql.php';
 
 class Auth{
     private $pdo;
     private $base;
     private $dao;
+    private $daoCustomer;
 
     public function __construct(PDO $pdo, $base){
         $this->pdo = $pdo;
         $this->base = $base;
         $this->dao = new UserDaoMysql($this->pdo);
+        $this->daoCustomer = new CustomerDaoMysql($this->pdo);
     }
 
     public function checkToken(){
@@ -35,6 +38,25 @@ class Auth{
 
         $this->dao->insert($newUser);
         $_SESSION['token'] = $token;
+    }
+
+    public function registerCustomer($name, $email, $phone, $birthdate){
+        $date = new DateTime();
+        $date->setTimezone(new DateTimeZone('America/Sao_Paulo'));
+        $now = $date->format('d/m/Y H:i:s');
+        
+            
+        $newCustomer = new Customer();
+        $newCustomer->name = $name;
+        $newCustomer->email = $email;
+        $newCustomer->phone = $phone;
+        $newCustomer->birthdate = $birthdate;
+        $newCustomer->date = $now;       
+              
+       
+
+        $this->daoCustomer->insert($newCustomer);
+       
     }
 
     public function validateLogin($email, $password){

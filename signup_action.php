@@ -10,9 +10,11 @@ $password = filter_input(INPUT_POST, 'password');
 $phone = filter_input(INPUT_POST, 'phone');
 $birthdate = filter_input(INPUT_POST, 'birthdate');
 
-if($type==client){
-    echo "É cliente";
-    exit;
+$auth = new Auth($pdo, $base);
+
+if($type=='client'){    
+    $auth->registerCustomer($name, $email, $phone, $birthdate); 
+    exit;   
 }else{
     echo "Não é cliente";
     exit;
@@ -21,7 +23,7 @@ if($type==client){
 //echo $name. "   " .$store. "   " .$email. "   " .$type. "   " .$password;
 
 if($name && $store && $email && $type && $password){
-    $auth = new Auth($pdo, $base);
+   
     if($auth->emailExist($email)===false){     
         $auth->registerUser($name, $store, $email, $type, $password);
         header('Location: ' .$base);
