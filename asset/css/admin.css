@@ -24,7 +24,28 @@
     padding: 10px;
 }
 
-    .content-form-login h1{
+.content-form-login h1{
+text-align: center;
+font-family:sans-serif;
+}
+
+.list-customer-content{
+    width: 74%;
+    margin: 10px 13%;
     text-align: center;
-    font-family:sans-serif;
-    }
+}
+
+.list-customer-content table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .list-customer-content table td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }

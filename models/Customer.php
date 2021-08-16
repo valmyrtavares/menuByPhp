@@ -12,4 +12,6 @@ class Customer{
 
 interface CustomerDAO{    
     public function insert($u);
+    public function getCustomers();
+    
 }

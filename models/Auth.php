@@ -43,19 +43,18 @@ class Auth{
     public function registerCustomer($name, $email, $phone, $birthdate){
         $date = new DateTime();
         $date->setTimezone(new DateTimeZone('America/Sao_Paulo'));
-        $now = $date->format('d/m/Y H:i:s');
+        $now = $date->format('d/m/Y H:i:s');        
         
-            
         $newCustomer = new Customer();
         $newCustomer->name = $name;
         $newCustomer->email = $email;
         $newCustomer->phone = $phone;
         $newCustomer->birthdate = $birthdate;
-        $newCustomer->date = $now;       
-              
+        $newCustomer->date = $now;          
        
 
         $this->daoCustomer->insert($newCustomer);
+        return true;
        
     }
 

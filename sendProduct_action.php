@@ -1,6 +1,6 @@
 <?php
 require_once 'config.php';
-require_once 'model/Product.php';
+//require_once 'model/Product.php';
 require_once 'dao/ProductDaoMysql.php';
 
 $title = filter_input(INPUT_POST, 'title');

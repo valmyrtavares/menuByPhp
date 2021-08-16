@@ -27,3 +27,13 @@ eu usei um unlink muito tranquilo que está no final do if do arquivo novo.
 Como uma pequena feature eu coloquei um link em cada produto para, para se o dono 
 do restaurante quiser ir mais rapido direto para o produto ele só clica direto no produto 
 e a tela já abre direto no edit para agilizar.
+
+Como esse trabalho está se desenvolvendo baseado em uma aula e não é uma aula
+eu infelizmente eu não estou tendo o cuidado com os commits e sei o quanto eles são 
+importantes depois. Esse é um trabalho inédito por isso vou tentar fazer uma descrição
+desse enormr commit de agora e depois vou passar a fazer commits menores que ajudem
+quem estiver estudando a entender o que está sendo pensado e feito em cada parte
+1 Aumentei a quantidade de menus para poder ter mais facilidade de acessar as telas
+que estou trabalhando, mas não pretendo deixá-las assim
+2 Criei uma tabela request, que será a conexão de todas as outras tabelas, dentro dessa 
+tabela eu terei um id_product id_user

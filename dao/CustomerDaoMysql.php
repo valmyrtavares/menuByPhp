@@ -25,4 +25,13 @@ class CustomerDaoMysql implements CustomerDAO {
         return true;
     }
 
+    public function getCustomers(){
+        $sql = $this->pdo->query("SELECT * FROM customer");
+        $sql->execute(); 
+        if($sql->rowCount()>0){
+            $data = $sql->fetchAll(PDO::FETCH_ASSOC);
+           return $data;
+        }
+    }
+
 }
