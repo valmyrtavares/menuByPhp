@@ -28,7 +28,7 @@ $products = $productDao->getProducts();
 
 <div class="content-carrossel">
     <?php foreach($products as $product):?>
-        <?php if($product['showcase']==1): ?>        
+        <?php if($product['showcase']===1): ?>        
             <?=require 'partials/carrossel.php';?>
         <?php endif; ?>
     <?php endforeach;?>

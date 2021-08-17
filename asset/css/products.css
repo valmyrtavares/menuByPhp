@@ -1,8 +1,9 @@
 .products{
     background: gray;
     padding: 5px;
-    margin: 10px auto;
-    max-width: 800px;
+    margin: 10px 11%;
+    width: 90%;
+    max-width: 1100px;
     text-align: center;
     font-family: sans-serif;
     display: flex;
@@ -53,25 +54,8 @@
     font-size:5vw;
  }
 
- .modal-product{
-    position: absolute;
-    height: 514px;
-    width: 766px;
-    top: 86px;
-    left: 322px;
-    background: rgb(138, 54, 216, 1);
-    display:none;
 
-}
-.modal-product img{
-   width: 60%;
-    margin: 10px 20%;
-}
-.modal-product h1{
-    color:#FFF;
-    text-align: center;
-    font-family: monospace;
-}
+
 
 /* FORMULARIO DE SEND PRODUTO */
 

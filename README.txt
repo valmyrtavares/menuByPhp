@@ -79,3 +79,9 @@ que é toda a parte do admin, que eu não tinha arrumado para o formato de mobil
 o problema de check box que também estava muito estranho. Eu aconsegui colocá-lo dentro de
 uma div e usar um flex para alinhá-lo . Agora sim achjo que a parte do uso carrossel e bugs
 faz sentido, antes de cuidar dos menus internos de cada menu
+
+Arrumei o detalhes do produto que eu tinha esquecido. Já descobri o que faz com que
+o carrossel se desloque. E são os numeros 1 que aparecem embaixo e encima. Eles são
+parte do código do php que pergunta se o produto deve ou não entrar no carrossel. Se
+sim tem que ser 1 senão tem que ser 0 e cada produto que está dentro do carrossel 
+aumenta um numero 1 e isso desloca a div e faz tudo andar

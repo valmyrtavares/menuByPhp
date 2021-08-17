@@ -26,18 +26,18 @@
     display:none;
 }
 .modal-product{
-    position: absolute;
+    position: relative;
     height: 514px;
-    width: 766px;
-    top: 86px;
-    left: 322px;
+    width: 73%;
+    top: -400px;
+    left: 13%;
     background: rgb(138, 54, 216, 1);
     display:none;
 
 }
 .modal-product img{
-   width: 60%;
-    margin: 10px 20%;
+    width: 94%;
+    margin: 41px 3%;
 }
 .modal-product h1{
     color:#FFF;
@@ -64,7 +64,7 @@
     border:none;
     position:relative;
     top: 15px;
-    left: 711px;
+    left: 89%;
     font-size: 25px;
     cursor:pointer;
 }

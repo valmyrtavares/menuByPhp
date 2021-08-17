@@ -24,10 +24,25 @@
         font-size: 25px;       
     }
     .send-header input {       
-        font-size: 25px;        
+        font-size: 20px;        
     }
     .content-form h1{       
         font-size: 30px
+    }
+    .products-edit-line h3{
+        font-size:25px;
+    }
+    .send-header label{
+        font-size:25px;
+    }
+    .products h1{
+        font-size:25px;
+        max-width: 200px;
+    }
+  
+    .products h2{
+    font-size:14px;
+    max-width: 200px;
     }
     
 }
