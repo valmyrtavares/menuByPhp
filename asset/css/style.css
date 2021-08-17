@@ -2,6 +2,7 @@
 @import 'admin.css';
 @import 'default.css';
 @import 'carrossel.css';
+@import 'desktop.css';
 
 
 .main-menu{
@@ -90,15 +91,16 @@
     text-align: center;
 }
 .footer{
-    width: 59%;
-    height: 40px;
+    width: 88%;
+    padding: 4px;
     background: burlywood;
     margin: 10px auto;
-    text-align:center;
+    text-align: center;
+    font-size: 2vw;
 }
 .suggest-chef{
     color:rgba(150, 122, 202);
-    font-size:30px;
+    font-size:6vw;
     font-family:monospace;  
     text-align: center;
     margin: 10px;

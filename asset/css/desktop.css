@@ -1,0 +1,15 @@
+@media(min-width:700px){
+   .suggest-chef {
+       font-size: 40px !important;
+   }
+   .carrosel h1 {
+    font-size: 40px !important;
+   }
+   [data-type]{
+    font-size: 40px ;
+   }
+   .footer{
+    font-size: 18px !important;
+   }
+  
+}

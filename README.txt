@@ -68,3 +68,8 @@ Está tudo feito. Tenho um pequeno bug que não quero me preocuparem demasia ago
 pulo que a tela da quando mudo a sugetão do chef, mas está tudo alinhado e com uma certa harmonia.
 No próximo commit vou entrar definitivamente no mobile e no comportamento gera das tags 
 em um tamanho reduzido. 
+
+Feito os ajustes do mobile com o acrescimo de um arquivo de desktop, que eu acho que deveria se
+chamar mobile, mesmo ele gerando efeitos nas fontes das letras acima de 700px. Eu acho 
+que talvez fosse mais didático, vou seguir assim. Agora falta arrumar o pulo do carrossel
+e fazer um uso geral de bugs.
