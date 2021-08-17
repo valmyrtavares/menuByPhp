@@ -24,6 +24,7 @@ $products = $productDao->getProducts();
     <?php endif;?>
    
 </div>
+<h3 class="suggest-chef">Sugestão do Chef</h3>
 
 <div class="content-carrossel">
     <?php foreach($products as $product):?>

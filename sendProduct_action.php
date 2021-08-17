@@ -22,7 +22,7 @@ if(isset($_FILES['img']) && !empty($_FILES['img']['tmp_name'])){
     if(in_array($newImg['type'],['image/jpeg', 'image/jpg', 'image/png'])){
        
         $imgWidth = 525;
-        $imgHeight = 350;
+        $imgHeight = 200;
 
         list($widthOrigin, $heightOrigin)= getImagesize($newImg['tmp_name']);
         $ratio = $widthOrigin / $heightOrigin;

@@ -71,9 +71,12 @@
     background: rgb(118, 126, 107, .2);
     max-width: 816px;
     width: 86%;
-    height: 30vh;
+    
     text-align:center;
     margin: 10px auto;
+}
+.logo-container img{
+    width: 100%;
 }
 .send-logo{
     width: 43%;
@@ -92,4 +95,15 @@
     background: burlywood;
     margin: 10px auto;
     text-align:center;
+}
+.suggest-chef{
+    color:rgba(150, 122, 202);
+    font-size:30px;
+    font-family:monospace;  
+    text-align: center;
+    margin: 10px;
+
+}
+body{
+    background:hsla(300, 35%, 40%, 0.185);
 }

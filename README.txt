@@ -63,3 +63,8 @@ login. Uma vez logado o header mostra o menu e as possibildiades do admin. Ou se
 com o admin presente e outro sem o admin, como foi proposto
 Agora vou acomodar o header do restaurante dentro do espaço criar um sequencia entre header carrossel botões
 e footer e colocar um background
+
+Está tudo feito. Tenho um pequeno bug que não quero me preocuparem demasia agora que é um certo 
+pulo que a tela da quando mudo a sugetão do chef, mas está tudo alinhado e com uma certa harmonia.
+No próximo commit vou entrar definitivamente no mobile e no comportamento gera das tags 
+em um tamanho reduzido. 
