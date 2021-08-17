@@ -11,7 +11,7 @@ require_once 'config.php';
     <title>Menu</title>
 </head>
 <body>
-
+<?php if($_SESSION['token']): ?>
    <div class="main-menu">
        <a href="<?=$base;?>">Home</a>
        <a href="<?=$base;?>/loginCustomer.php">login usuário</a>
@@ -20,4 +20,6 @@ require_once 'config.php';
        <a href="<?=$base;?>/signup_Customer.php">Cliente login</a>
        <a href="<?=$base;?>/signup.php">Cadastrar</a>
        <a href="<?=$base;?>/sendProduct.php">Enviar Produts</a>
+       <a href="<?=$base;?>/logout.php">Sair</a>
    </div>
+<?php endif ?>

@@ -2,8 +2,9 @@
 require_once 'config.php';
 require 'dao/ProductDaoMysql.php';
 
+    require 'partials/header.php';
 
-require 'partials/header.php';
+
 
 $productDao = new ProductDaoMysql($pdo);
 $products = $productDao->getProducts();
@@ -67,6 +68,7 @@ $products = $productDao->getProducts();
 </div>
 
 <script src="asset/js/script.js"></script>
+<?php require 'partials/footer.php'?>
 
 </body>
 </html>

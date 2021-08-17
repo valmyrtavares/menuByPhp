@@ -57,3 +57,9 @@ sessão faz com que a imagem do header apareça, quando ela aparece no header o 
 De E temos um botão de enviar uma nova imagem no edit_delete. Para facilitar quando não existe 
 nenhuma imagem temos o botão no index, quando temos uma imagem, a tela de edição fica somente no edit_delete
 E funcionando. Agora vou fazer com que o aplicativo se comporte de uma forma com admin logado e sem 
+
+Foi feito uma tela de logout que é acessado a partir do footer e que pode fazer com que o admin faça
+login. Uma vez logado o header mostra o menu e as possibildiades do admin. Ou seja temos um comportamento
+com o admin presente e outro sem o admin, como foi proposto
+Agora vou acomodar o header do restaurante dentro do espaço criar um sequencia entre header carrossel botões
+e footer e colocar um background
