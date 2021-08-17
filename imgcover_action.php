@@ -4,12 +4,11 @@ require_once 'config.php';
 $imageDeleted = 'media/products/'.$_SESSION['cover'];
 echo $imageDeleted;
 
-if(file_exists($imageDeleted)){
-    echo "Sim existe";
+if(file_exists($imageDeleted)){   
     unlink($imageDeleted);               
-}else{
-    echo 'Não existe';
 }
+$_SESSION['cover'] = "";
+header('Location:' .$base);
 
 
 //imagem do header

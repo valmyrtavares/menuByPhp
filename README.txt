@@ -51,3 +51,9 @@ eu fui acrescentando mais funcionalidades o que foi poluindo o projeto e o torna
 evitar essa armadílha, eu resolvi chegar a 100% do projeto como um simples cardápio editável, para depois
 disso feito, funcionando, publicado e comitado eu passe a caminhar para um segundo ponto que é 
 aumentar as features e possibilidades do projeto.
+
+Implementei um botão de enviar fotos dentro do index, que preenche uma sessão['cover'] essa 
+sessão faz com que a imagem do header apareça, quando ela aparece no header o botão desaparece.
+De E temos um botão de enviar uma nova imagem no edit_delete. Para facilitar quando não existe 
+nenhuma imagem temos o botão no index, quando temos uma imagem, a tela de edição fica somente no edit_delete
+E funcionando. Agora vou fazer com que o aplicativo se comporte de uma forma com admin logado e sem 

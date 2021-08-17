@@ -11,19 +11,19 @@ $products = $productDao->getProducts();
 
 ?>
 <div  class="logo-container">
-   
-       
-    <form class="send-logo" method="POST"  action="imgcover_action.php" enctype="multipart/form-data">
-        <label>Imagem de Cabeçario
-        <input type="file" name="cover"/>
-        <input type="submit" value="enviar">
-        </label>
-    </form>
+    <?php if(!empty($_SESSION['cover'])):?>
+        <img src="media/products/<?=$_SESSION['cover']?>" alt="cover"/>
+        <?php else:?>
+            <form class="send-logo" method="POST"  action="imgcover_action.php" enctype="multipart/form-data">
+            <label>Imagem de Cabeçario
+            <input type="file" name="cover"/>
+            <input type="submit" value="enviar">
+            </label>
+        </form>
+    <?php endif;?>
    
 </div>
-<?php if(!empty($_SESSION['cover'])):?>
-<img src="media/products/<?=$_SESSION['cover']?>" alt="cover"/>
-<?php endif;?>
+
 <div class="content-carrossel">
     <?php foreach($products as $product):?>
         <?php if($product['showcase']==1): ?>        
