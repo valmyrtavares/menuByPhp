@@ -7,6 +7,7 @@ require 'partials/header.php';
       <?=$_SESSION['envio']; ?>
       <?=$_SESSION['envio']=" ";?>
     <?php endif; ?>
+
     <form class="form-send" method="POST" action="sendProduct_action.php" enctype="multipart/form-data">
         <label>Titulo</label>
             <input type="text" name="title"/>
@@ -28,8 +29,10 @@ require 'partials/header.php';
         
         <label>Preço </label>
             <input type="number" name="price"/>
-        <input type="submit" valur="Enviar">
+        <input type="submit" value="Enviar">
     </form>
+   
+
     <a href="<?=$base?>/edit_delete.php">Editar produtos</a>
 </div>
     

@@ -3,11 +3,13 @@ require 'partials/header.php';
 ?>
 <div class="content-form-login">
     <h1> Fala o seu login</h1>
-    <form class="form-send" method="POST" action="signup_action.php" >
+    <form class="form-send" method="POST" action="signup_action.php" enctype="multipart/form-data" >
             <label>Nome</label>
             <input type="text" name="name"/>
             <label>Estabelecimento</label>
             <input type="text" name="store"/>
+            <label>Imagem</label>
+            <input type="file" name="cover"/>
             <label>Email</label>
             <input type="email" name="email"/>
             <label>Cargo</label>

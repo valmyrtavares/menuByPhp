@@ -6,6 +6,7 @@ class User{
     public $email;
     public $type;
     public $password;    
+    public $cover;
     public $token;    
 }
 

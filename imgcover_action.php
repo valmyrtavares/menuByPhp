@@ -1,23 +1,22 @@
 <?php
 require_once 'config.php';
-//require_once 'model/Product.php';
-require_once 'dao/ProductDaoMysql.php';
 
-$title = filter_input(INPUT_POST, 'title');
-$subtitle = filter_input(INPUT_POST, 'subtitle');
-$img = filter_input(INPUT_POST, 'img');
-$type = filter_input(INPUT_POST, 'type');
-$price = filter_input(INPUT_POST, 'price');
-$showcase = filter_input(INPUT_POST, 'showcase');
+$imageDeleted = 'media/products/'.$_SESSION['cover'];
+echo $imageDeleted;
 
-$showcase = $showcase ? 1:0;
+if(file_exists($imageDeleted)){
+    echo "Sim existe";
+    unlink($imageDeleted);               
+}else{
+    echo 'Não existe';
+}
 
 
-//imagem de produtos
+//imagem do header
 
-if(isset($_FILES['img']) && !empty($_FILES['img']['tmp_name'])){   
+if(isset($_FILES['cover']) && !empty($_FILES['cover']['tmp_name'])){   
 
-    $newImg = $_FILES['img'];
+    $newImg = $_FILES['cover'];
 
     if(in_array($newImg['type'],['image/jpeg', 'image/jpg', 'image/png'])){
        
@@ -77,42 +76,12 @@ if(isset($_FILES['img']) && !empty($_FILES['img']['tmp_name'])){
         
 
         $imgName = md5(time().rand(0,9999)). '.jpg';
-        imagejpeg($finalImage, './media/products/'.$imgName, 100);
-        
-       // print_r($finalImage) print_r($image) Ambos dão o objeto vazio e o erro
-       //aqui era a falta do ponto antes do jpg
-       //print_r(imagejpeg);Isso também não fuciona só da pra conferir o arquivo
-       //na pasta media
+        imagejpeg($finalImage, './media/products/'.$imgName, 100);      
+      
       
       
     }
  
-
+    $_SESSION['cover'] = $imgName;
+    header('Location:' .$base);
 }
-
-
-//echo $title. "   " .$subtitle. "    " .$imgName. "   " .$price. "  " .$type. "  " .$showcase;
-
-if($title && $subtitle &&  $imgName && $type && $price){
-    
-
-   $daoProduct = new ProductDaoMysql($pdo);
-    $newProduct = new Product();
-    $newProduct->title = $title;
-    $newProduct->subtitle = $subtitle;
-    $newProduct->img = $imgName;
-    $newProduct->type = $type;
-    $newProduct->price = $price;
-    $newProduct->showcase = $showcase;
-
-   $daoProduct->insert($newProduct);
-   header('Location: '.$base);
-   
-}else{
-    $_SESSION['envio']= "Todos os campos precisam ser preenchidos";
-    header('Location: '.$base. '/sendProduct.php');
-}
-
-
-
-

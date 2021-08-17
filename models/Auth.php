@@ -15,15 +15,21 @@ class Auth{
         $this->daoCustomer = new CustomerDaoMysql($this->pdo);
     }
 
-    public function checkToken(){
-
+    public function checkToken($t){
+        $sql = $this->pdo->prepare("SELECT * FROM users WHERE token = :token");
+        $sql->bindValue('token',$t);
+        $sql->execute();
+        if($sql->rowCount()>0){
+           $data =  $sql->fetch(PDO::FETCH_ASSOC);
+           return $data;
+        }
     }
 
     public function emailExist($email){
         return $this->dao->findByEmail($email)?true:false;
     }
 
-    public function registerUser($name, $store, $email, $type, $password){
+    public function registerUser($name, $store, $email, $type, $password, $imgName ){
 
         $hash = password_hash($password, PASSWORD_DEFAULT);
         $token = md5(time()).rand(0, 9999);
@@ -33,8 +39,9 @@ class Auth{
         $newUser->email = $email;
         $newUser->store = $store;
         $newUser->type = $type;
+        $newUser->cover = $imgName;
         $newUser->password = $hash;
-        $newUser->token = $token;
+        $newUser->token = $token;        
 
         $this->dao->insert($newUser);
         $_SESSION['token'] = $token;
@@ -68,6 +75,7 @@ class Auth{
                     $this->dao->update($user);
 
                 $_SESSION['token']=$token;
+                
                 return true;
             }
        }

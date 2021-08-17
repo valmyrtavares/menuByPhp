@@ -37,3 +37,17 @@ quem estiver estudando a entender o que está sendo pensado e feito em cada part
 que estou trabalhando, mas não pretendo deixá-las assim
 2 Criei uma tabela request, que será a conexão de todas as outras tabelas, dentro dessa 
 tabela eu terei um id_product id_user
+
+Foto de header
+Eu implementei a fotografia sem que fosse para o banco de dados, fiz um arquivo imgcover.php
+e coloquei o redimensionador de imagem dentro dele com um verificador para a imagem antiga
+Ele sempre exclui a imagem anterior das pasta do projeto e inclui a nova, sem necessidade
+de fazer um edit. É um processo mais simples e que pode funcionar bem em muitas situações
+que não se deve envolver o banco de dados. De qualquer forma esse commit também está confuso
+Com mais coisas do que devia. Eu estou muito focado em fazer funcionar
+Eu resolvi cominhar primeiro para que o projeto se torne um simples cardápio editável e 
+funcional. Chegando a esse primeiro estágio, que era o projeto inicial. Ao longo do desenvolmento
+eu fui acrescentando mais funcionalidades o que foi poluindo o projeto e o tornando confuso. Para 
+evitar essa armadílha, eu resolvi chegar a 100% do projeto como um simples cardápio editável, para depois
+disso feito, funcionando, publicado e comitado eu passe a caminhar para um segundo ponto que é 
+aumentar as features e possibilidades do projeto.

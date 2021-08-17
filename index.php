@@ -2,12 +2,28 @@
 require_once 'config.php';
 require 'dao/ProductDaoMysql.php';
 
+
 require 'partials/header.php';
 
 $productDao = new ProductDaoMysql($pdo);
 $products = $productDao->getProducts();
-?>
 
+
+?>
+<div  class="logo-container">
+   
+       
+    <form class="send-logo" method="POST"  action="imgcover_action.php" enctype="multipart/form-data">
+        <label>Imagem de Cabeçario
+        <input type="file" name="cover"/>
+        <input type="submit" value="enviar">
+        </label>
+    </form>
+   
+</div>
+<?php if(!empty($_SESSION['cover'])):?>
+<img src="media/products/<?=$_SESSION['cover']?>" alt="cover"/>
+<?php endif;?>
 <div class="content-carrossel">
     <?php foreach($products as $product):?>
         <?php if($product['showcase']==1): ?>        

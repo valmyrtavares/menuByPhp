@@ -66,3 +66,25 @@
     font-size: 25px;
     cursor:pointer;
 }
+
+.logo-container{
+    background: rgb(118, 126, 107, .2);
+    max-width: 816px;
+    width: 86%;
+    height: 30vh;
+    text-align:center;
+    margin: 10px auto;
+}
+.send-logo{
+    width: 43%;
+    margin: 10px 23%;
+
+}
+
+.send-logo label{
+    width:80%;
+    margin:10px auto;
+    text-align: center;
+  
+
+}

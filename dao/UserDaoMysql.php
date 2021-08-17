@@ -29,8 +29,7 @@ private $pdo;
             $user = $this->generateUser($data);
             return $user;
         }
-        echo"Não Entrou";
-        exit;
+      
         return false;
     }
 
@@ -57,14 +56,15 @@ private $pdo;
 
     public function insert($u){
         $sql = $this->pdo->prepare("INSERT INTO users 
-        (name, email, store, type, password, token) 
+        (name, email, store, type,cover, password, token) 
         VALUES
-        (:name, :email, :store, :type, :password,:token)");
+        (:name, :email, :store, :type,:cover, :password,:token)");
         $sql->bindValue(':name', $u->name);
         $sql->bindValue(':email', $u->email);
         $sql->bindValue(':store', $u->store);
         $sql->bindValue(':type', $u->type);
         $sql->bindValue(':password', $u->password);
+        $sql->bindValue(':cover', $u->cover);
         $sql->bindValue(':token', $u->token);
       
         $sql->execute();
