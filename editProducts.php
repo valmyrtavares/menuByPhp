@@ -28,10 +28,13 @@ require 'partials/header.php';
                 <option value="porcoes">Porçoes</option>
                 <option value="lanches">Lanchers</option>
             </select>
-            <label> Sugestão do Chef</label><br>
-            <input type="checkbox" name="showcase"  value="<?=$product->showcase;?>"
+        <div class="check">
+            <input type="checkbox" id="chef" name="showcase"  value="<?=$product->showcase;?>"
             <?=$check = $product->showcase==1? 'checked':"" ?> <?=$check?>/>
-            
+            <label for="chef"> Sugestão do Chef </label></br>
+        </div>
+
+           
         <label>preço </label>
             <input type="number" name="price" value="<?=$product->price ?>"/>
         <input type="submit" value="Enviar">

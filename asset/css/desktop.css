@@ -11,5 +11,23 @@
    .footer{
     font-size: 18px !important;
    }
-  
+   .content-form-login h1{
+    font-size: 30px ;
+    }
+    .form-send label, input{   
+        font-size:20px;
+    } 
+    .content-form a{  
+        font-size: 23px;
+    }
+    .products-edit-line a, h3 {
+        font-size: 25px;       
+    }
+    .send-header input {       
+        font-size: 25px;        
+    }
+    .content-form h1{       
+        font-size: 30px
+    }
+    
 }

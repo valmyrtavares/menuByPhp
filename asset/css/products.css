@@ -79,17 +79,16 @@
     width:80%;
     margin:10px auto;
     background-color: rgb(167, 164, 164, .3);
+    padding: 10px;
 }
 
 .content-form h1{
 text-align: center;
 font-family:sans-serif;
+font-size: 4vw
 }
-.content-form a{
-    text-align: left;
-    position: relative;
-    left: 225px;
-    font-size: 23px;
+.content-form a{  
+    font-size: 4vw;
     font-family: monospace;
     }
 .form-send{
@@ -99,13 +98,13 @@ font-family:sans-serif;
 .form-send label{
    display:block;
    margin-bottom:10px;
-   font-size: 20px;
+   font-size:3vw;
 }   
 .form-send input{
     width:80%;
     margin-bottom:10px;
     min-height: 30px;
-    font-size:16px;
+    font-size:4vwpx;
     border-radius:4px;
 }
 .form-send select{

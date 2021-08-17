@@ -20,11 +20,11 @@ require 'partials/header.php'
             <a href="<?=$base;?>/editProducts.php?id=<?=$product['id'];?>">Editar</a>
         </div>
     <?php endforeach;?>
-    <form class="send-logo" method="POST"  action="imgcover_action.php" enctype="multipart/form-data">
-        <label>Imagem de Cabeçario
+    <form class="send-header" method="POST"  action="imgcover_action.php" enctype="multipart/form-data">
+        <label>Imagem de Cabeçario   </label>
             <input type="file" name="cover"/>
             <input type="submit" value="enviar">
-        </label>
+            <img src="media/products/<?=$_SESSION['cover']?>"/>     
     </form>
 </div>
 

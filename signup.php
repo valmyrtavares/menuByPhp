@@ -2,7 +2,7 @@
 require 'partials/header.php';
 ?>
 <div class="content-form-login">
-    <h1> Fala o seu login</h1>
+    <h1> Faça o seu cadastro</h1>
     <form class="form-send" method="POST" action="signup_action.php" enctype="multipart/form-data" >
             <label>Nome</label>
             <input type="text" name="name"/>

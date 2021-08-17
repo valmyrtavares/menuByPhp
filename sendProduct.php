@@ -23,10 +23,10 @@ require 'partials/header.php';
                 <option value="porcoes">Porçoes</option>
                 <option value="lanches">Lanchers</option>
             </select>
-
-            <label for="vehicle1"> Sugestão do Chef</label><br>
-            <input type="checkbox" name="showcase" value="true">
-        
+            <div class="check">
+                <input type="checkbox" name="showcase" value="true">
+                <label for="vehicle1"> Sugestão do Chef</label><br>
+            </div>
         <label>Preço </label>
             <input type="number" name="price"/>
         <input type="submit" value="Enviar">

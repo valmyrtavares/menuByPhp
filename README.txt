@@ -73,3 +73,9 @@ Feito os ajustes do mobile com o acrescimo de um arquivo de desktop, que eu acho
 chamar mobile, mesmo ele gerando efeitos nas fontes das letras acima de 700px. Eu acho 
 que talvez fosse mais didático, vou seguir assim. Agora falta arrumar o pulo do carrossel
 e fazer um uso geral de bugs.
+
+Na verdade eu tive que ir para um outro assunto que eu tinha me esquecido no commit anterior
+que é toda a parte do admin, que eu não tinha arrumado para o formato de mobile e 
+o problema de check box que também estava muito estranho. Eu aconsegui colocá-lo dentro de
+uma div e usar um flex para alinhá-lo . Agora sim achjo que a parte do uso carrossel e bugs
+faz sentido, antes de cuidar dos menus internos de cada menu
