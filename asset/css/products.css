@@ -1,8 +1,8 @@
 .products{
     background: gray;
     padding: 5px;
-    margin: 0px 10%;
-    width: 77%;
+    margin: 0px 20.5%;
+    width: 58%;
     max-width: 1100px;
     text-align: center;
     font-family: sans-serif;
@@ -47,11 +47,12 @@
  [data-type] {
     background:blueviolet;
     margin:2px auto;
-    width:82%;
+    width:59%;
     text-align:center;
     color:#FFF;
     cursor:pointer;
     font-size:5vw;
+    font-family: sans-serif;
  }
 
 

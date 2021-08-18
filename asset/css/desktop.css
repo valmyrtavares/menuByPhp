@@ -44,5 +44,18 @@
     font-size:14px;
     max-width: 200px;
     }
-    
+    .products p{
+        font-size:17px;
+    }
+    .main-menu a{
+        font-size:15px !important;
+    }
+    .admin-edit{
+        font-size:15px;
+    }
+}
+@media(max-width:400px){
+    .modal-product {
+        left:0 !important;
+    }
 }

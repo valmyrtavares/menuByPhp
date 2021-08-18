@@ -8,7 +8,7 @@
 .main-menu{
    display:flex;
    margin: 10px auto;
-   width:90%;
+   width:59%;
    justify-content:space-around;
    background: rgb(132, 128, 128, .7);
    padding:5px;
@@ -27,8 +27,8 @@
 }
 .modal-product{
     position: relative;
-    height: 514px;
     width: 73%;
+    min-width: 350px;
     top: -400px;
     left: 13%;
     background: rgb(138, 54, 216, 1);
@@ -92,7 +92,7 @@
     text-align: center;
 }
 .footer{
-    width: 88%;
+    width: 59%;
     padding: 4px;
     background: burlywood;
     margin: 10px auto;

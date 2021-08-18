@@ -92,3 +92,9 @@ Uso para notar inconsistencias no sistema, mudar as cores e os tamanhos porque s
 e tentar resolver esse bug dos númeos que aparecem no meio das telas. E ai o grande desafio antes de 
 qualquer coisa que é fazer deploy da aplicação. Lembrando sempre que o meu esforço com php
 nasceu do bode que eu tive na hora de fazer deploy com uma aplicação node.
+
+1 Melhorias fazer uma transiçãoo ao fechar e abrir os menus
+2 Criar uma paleta só
+
+
+Ele é confortável e isso ajuda bastante a quem passa o dia inteiro teclando
