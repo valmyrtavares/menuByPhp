@@ -5,26 +5,33 @@ let images = document.querySelectorAll('.carrosel');
 
 
 
+// function showHide(){       
+//     console.log(key)
+//      key.forEach(item =>{
+//         item.nextElementSibling.classList.add('hide')
+//     })  
+//     key.forEach((item, index) => {       
+//         item.addEventListener('click', ()=>{
+//            testando(index);
+//         })
+//     })         
 
-function showHide(){    
-    console.log("teste")
-     key.forEach(item =>{
-        item.nextElementSibling.classList.add('hide')
-    })  
-    key.forEach((item, index) => {       
+// }
+function showHide(){
+   
+    key.forEach((item, index) =>{
         item.addEventListener('click', ()=>{
-           testando(index);
+            testando(index)
         })
-    })         
-
+    })
 }
 
 function testando(index){
    
-    key.forEach(item =>{
-        item.nextElementSibling.classList.add('hide')
-    })
-    key[index].nextElementSibling.classList.remove('hide')
+    // key.forEach(item =>{
+    //     item.nextElementSibling.classList.add('hide')
+    // })
+    key[index].nextElementSibling.classList.toggle('hide')
 }
 showHide();
 modal();
@@ -37,11 +44,11 @@ function modal(){
     })
    
     target.forEach((item, index)=> {
-       item.addEventListener('click', ()=>{
-           console.log(index)
-           modalDetail[index].classList.add('show')
-       })
-   })
+        item.addEventListener('click', ()=>{
+            console.log(index)
+            modalDetail[index].classList.add('show')
+        })
+    })
        slideImage()   
 }
 
@@ -65,7 +72,8 @@ function tira(index){
 
 
 
-function slideImage(){       
+function slideImage(){     
+      console.log(images)
     let count = 0;
     const limit = images.length - 1;
     images[limit].classList.add('show')

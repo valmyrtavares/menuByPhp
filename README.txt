@@ -85,3 +85,10 @@ o carrossel se desloque. E são os numeros 1 que aparecem embaixo e encima. Eles
 parte do código do php que pergunta se o produto deve ou não entrar no carrossel. Se
 sim tem que ser 1 senão tem que ser 0 e cada produto que está dentro do carrossel 
 aumenta um numero 1 e isso desloca a div e faz tudo andar
+
+Foi implementados os submenus de cada tipo como bebidas pratos lanches e criado outros
+sub tipos dentro do select. Agora acreidto em 3 medidas para encerrar esse estágio do desenvolvimento
+Uso para notar inconsistencias no sistema, mudar as cores e os tamanhos porque são muito bregas
+e tentar resolver esse bug dos númeos que aparecem no meio das telas. E ai o grande desafio antes de 
+qualquer coisa que é fazer deploy da aplicação. Lembrando sempre que o meu esforço com php
+nasceu do bode que eu tive na hora de fazer deploy com uma aplicação node.
