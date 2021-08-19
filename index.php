@@ -13,7 +13,7 @@ $products = $productDao->getProducts();
 ?>
 <div  class="logo-container">
     <?php if(!empty($_SESSION['cover'])):?>
-        <img src="media/products/<?=$_SESSION['cover']?>" alt="cover"/>
+        <img src="<?=$base?>/media/products/<?=$_SESSION['cover']?>" alt="cover"/>
         <?php else:?>
             <form class="send-logo" method="POST"  action="imgcover_action.php" enctype="multipart/form-data">
             <label>Imagem de Cabeçario
@@ -29,7 +29,7 @@ $products = $productDao->getProducts();
 <div class="content-carrossel">
     <?php foreach($products as $product):?>
         <?php if($product['showcase']==1): ?>        
-            <?=require 'partials/carrossel.php';?>
+            <?php require 'partials/carrossel.php';?>
         <?php endif; ?>
     <?php endforeach;?>
 </div>
@@ -42,7 +42,7 @@ $products = $productDao->getProducts();
         <div class="hide" >
             <?php foreach($products as $product):?>
                 <?php if($product['type']=='vinhos'): ?>        
-                    <?=require 'partials/products.php';?>
+                    <?php require 'partials/products.php';?>
                 <?php endif; ?>
             <?php endforeach;?>
         </div>
@@ -50,7 +50,7 @@ $products = $productDao->getProducts();
         <div class="hide" >
             <?php foreach($products as $product):?>
                 <?php if($product['type']=='cervejas'): ?>        
-                    <?=require 'partials/products.php';?>
+                    <?php require 'partials/products.php';?>
                 <?php endif; ?>
             <?php endforeach;?>
         </div>
@@ -58,7 +58,7 @@ $products = $productDao->getProducts();
         <div class="hide" >
             <?php foreach($products as $product):?>
                 <?php if($product['type']=='drinks'): ?>        
-                    <?=require 'partials/products.php';?>
+                    <?php require 'partials/products.php';?>
                 <?php endif; ?>
             <?php endforeach;?>
         </div>
@@ -69,7 +69,7 @@ $products = $productDao->getProducts();
         <div class="hide" >
             <?php foreach($products as $product):?>
                 <?php if($product['type']=='suco'): ?>        
-                    <?=require 'partials/products.php';?>
+                    <?php require 'partials/products.php';?>
                 <?php endif; ?>
             <?php endforeach;?>
         </div>
@@ -79,7 +79,7 @@ $products = $productDao->getProducts();
         <div class="hide" >
             <?php foreach($products as $product):?>
                 <?php if($product['type']=='refrigerante'): ?>        
-                    <?=require 'partials/products.php';?>
+                    <?php require 'partials/products.php';?>
                 <?php endif; ?>
             <?php endforeach;?>
         </div>
@@ -91,7 +91,7 @@ $products = $productDao->getProducts();
 <div class="hide">
     <?php foreach($products as $product):?>
         <?php if($product['type']=='porcoes'): ?>        
-            <?=require 'partials/products.php';?>
+            <?php require 'partials/products.php';?>
         <?php endif; ?>
     <?php endforeach;?>
     </div>
@@ -102,7 +102,7 @@ $products = $productDao->getProducts();
 <div class="hide">
     <?php foreach($products as $product):?>
         <?php if($product['type']=='lancesTradicionais'): ?>        
-            <?=require 'partials/products.php';?>
+            <?php require 'partials/products.php';?>
         <?php endif; ?>
     <?php endforeach;?>
 </div>
@@ -110,7 +110,7 @@ $products = $productDao->getProducts();
 <div class="hide">
     <?php foreach($products as $product):?>
         <?php if($product['type']=='lanchesEspeciais'): ?>        
-            <?=require 'partials/products.php';?>
+            <?php require 'partials/products.php';?>
         <?php endif; ?>
     <?php endforeach;?>
 </div>
@@ -119,7 +119,7 @@ $products = $productDao->getProducts();
 <div class="hide">
     <?php foreach($products as $product):?>
         <?php if($product['type']=='lanches'): ?>        
-            <?=require 'partials/products.php';?>
+            <?php require 'partials/products.php';?>
         <?php endif; ?>
     <?php endforeach;?>
 </div>
@@ -130,7 +130,7 @@ $products = $productDao->getProducts();
     <div class="hide">
         <?php foreach($products as $product):?>
             <?php if($product['type']=='caseira'): ?>        
-                <?=require 'partials/products.php';?>
+                <?php require 'partials/products.php';?>
             <?php endif; ?>
         <?php endforeach;?>
     </div>
@@ -138,7 +138,7 @@ $products = $productDao->getProducts();
     <div class="hide">
         <?php foreach($products as $product):?>
             <?php if($product['type']=='peixes'): ?>        
-                <?=require 'partials/products.php';?>
+                <?php require 'partials/products.php';?>
             <?php endif; ?>
         <?php endforeach;?>
     </div>
@@ -146,28 +146,21 @@ $products = $productDao->getProducts();
     <div class="hide">
         <?php foreach($products as $product):?>
             <?php if($product['type']=='carnes'): ?>        
-                <?=require 'partials/products.php';?>
+                <?php require 'partials/products.php';?>
             <?php endif; ?>
         <?php endforeach;?>
     </div>
-    <h1 data-type class="sub-first">Frutos do mar</h1><
+    <h1 data-type class="sub-first">Frutos do mar</h1>
     <div class="hide">
         <?php foreach($products as $product):?>
             <?php if($product['type']=='frutosdomar'): ?>        
-                <?=require 'partials/products.php';?>
+                <?php require 'partials/products.php';?>
             <?php endif; ?>
         <?php endforeach;?>
     </div>
 </div>
 
-</div>
-<div class="hide">
-    <?php foreach($products as $product):?>
-        <?php if($product['type']=='pratos'): ?>        
-            <?=require 'partials/products.php';?>
-        <?php endif; ?>
-    <?php endforeach;?>
-</div>
+
 
 <script src="asset/js/script.js"></script>
 <?php require 'partials/footer.php'?>
@@ -176,3 +169,5 @@ $products = $productDao->getProducts();
 </html>
 
 <!-- @category:debuggers PHP -->
+<!-- http://localhost/menu/login.php
+http://pratododia.pessoal.ws/ -->
