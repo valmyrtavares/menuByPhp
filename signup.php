@@ -20,6 +20,6 @@ require 'partials/header.php';
             </select>            
             <label>Senha</label>
             <input type="password" name="password"/>
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" style="margin-top:20px;">
     </form>
 </div>

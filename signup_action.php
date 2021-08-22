@@ -91,7 +91,7 @@ if($type==="client"){
             );            
     
             $imgName = md5(time().rand(0,9999)). '.jpg';
-            imagejpeg($finalImage, './media/products/'.$imgName, 100);  
+            imagejpeg($finalImage, $base.'./prod/'.$imgName, 100);  
             
                     
           

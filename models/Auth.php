@@ -15,14 +15,16 @@ class Auth{
         $this->daoCustomer = new CustomerDaoMysql($this->pdo);
     }
 
-    public function checkToken($t){
-        $sql = $this->pdo->prepare("SELECT * FROM users WHERE token = :token");
-        $sql->bindValue('token',$t);
-        $sql->execute();
-        if($sql->rowCount()>0){
-           $data =  $sql->fetch(PDO::FETCH_ASSOC);
-           return $data;
+    public function checkToken(){
+
+        if(!empty($_SESSION['token'])){
+            $token = $_SESSION['token'];
+           $user = $this->dao->findByToken($token);
+               return $user;
+            
         }
+        header("Location: ".$base);
+
     }
 
     public function emailExist($email){
@@ -68,14 +70,11 @@ class Auth{
     public function validateLogin($email, $password){
         $user = $this->dao->findByEmail($email);
        if($user){
-            if(password_verify($password, $user->password)){
-
-                    $token = md5(time().rand(0,9999));
-                    $user->token = $token;
-                    $this->dao->update($user);
-
-                $_SESSION['token']=$token;
-                
+            if(password_verify($password, $user->password)){                   
+                   // $token = md5(time().rand(0,9999));
+                   // $_SESSION['token']=$token;
+                   $_SESSION['token']= $user->token;                   
+                  //  $this->dao->update($user);               
                 return true;
             }
        }

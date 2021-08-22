@@ -75,8 +75,9 @@ if(isset($_FILES['cover']) && !empty($_FILES['cover']['tmp_name'])){
         
 
         $imgName = md5(time().rand(0,9999)). '.jpg';
-        imagejpeg($finalImage, './media/products/'.$imgName, 100);      
-      
+       // imagejpeg($finalImage,'./prod/'.$imgName, 100);      
+        imagejpeg($finalImage, __DIR__. './prod/' .$imgName, 100);      
+     
       
       
     }

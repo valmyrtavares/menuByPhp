@@ -35,6 +35,10 @@
     .send-header label{
         font-size:25px;
     }
+    .send-logo label, input{        
+        font-size: 16px !important;
+    } 
+
     .products h1{
         font-size:25px;
         max-width: 200px;
@@ -57,5 +61,10 @@
 @media(max-width:400px){
     .modal-product {
         left:0 !important;
-    }
+    }  
+    .form-send input{
+        height:60px;
+        font-size: 30px;
+    } 
+    
 }

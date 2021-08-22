@@ -40,7 +40,7 @@ class ProductDaoMysql implements ProductDAO {
         $sql->execute();
         if($sql->rowCount() > 0){          
             $data = $sql->fetch(PDO::FETCH_ASSOC);            
-            $img = 'media/products/'.$data['img'];
+            $img = __DIR__. 'media/products/'.$data['img'];
             if(file_exists($img)){
                 unlink($img);               
             }

@@ -12,5 +12,6 @@ class User{
 
 interface UserDAO{
     public function findByEmail($email);
-    public function insert($u);
+    public function insert(User $u);
+    public function update(User $u);
 }

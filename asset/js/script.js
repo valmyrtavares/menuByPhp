@@ -31,7 +31,7 @@ function testando(index){
     // key.forEach(item =>{
     //     item.nextElementSibling.classList.add('hide')
     // })
-    key[index].nextElementSibling.classList.toggle('hide')
+    key[index].nextElementSibling.classList.toggle('show-menu')
 }
 showHide();
 modal();

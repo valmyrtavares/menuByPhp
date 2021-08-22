@@ -8,7 +8,7 @@
 .main-menu{
    display:flex;
    margin: 10px auto;
-   width:59%;
+   width:89%;
    justify-content:space-around;
    background: rgb(132, 128, 128, .7);
    padding:5px;
@@ -23,8 +23,25 @@
 
 }
 .hide{
-    display:none;
+    display:none;  
 }
+.show-menu{
+    display: block;
+    animation: sh 1s alternate ;
+   
+
+}
+@keyframes sh{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -30px, 0)
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
+
 .modal-product{
     position: relative;
     width: 73%;
@@ -81,23 +98,33 @@
     width: 100%;
 }
 .send-logo{
-    width: 43%;
-    margin: 10px 23%;
-
+    width: 100%;
+    margin: 10px 0%;
+    padding:5px
 }
 
-.send-logo label{
-    width:80%;
-    margin:10px auto;
+.send-logo label{   
+    display:flex;
+    justify-content: space-around;
+    margin:5px auto;
     text-align: center;
+    font-size: 2vw;
+    align-items:center;
+}
+.send-logo input{  
+    text-align: center;
+    font-size: 2vw;
 }
 .footer{
-    width: 59%;
+    width: 87%;
     padding: 4px;
     background: burlywood;
     margin: 10px auto;
     text-align: center;
-    font-size: 2vw;
+    font-size: 4vw;
+    padding: 6px 3px;
+    position: relative;
+    bottom: -100px
 }
 .suggest-chef{
     color:rgba(150, 122, 202);
@@ -105,6 +132,7 @@
     font-family:monospace;  
     text-align: center;
     margin: 10px;
+   
 
 }
 body{
