@@ -1,14 +1,16 @@
 <?php
 require_once 'config.php';
+require_once 'dao/UserDaoMysql.php';
+
+ $UserDao = new UserDaoMysql($pdo);
 
 $imageDeleted = 'media/products/'.$_SESSION['cover'];
-echo $imageDeleted;
+
 
 if(file_exists($imageDeleted)){   
     unlink($imageDeleted);               
 }
-$_SESSION['cover'] = "";
-header('Location:' .$base);
+
 
 
 //imagem do header
@@ -75,12 +77,13 @@ if(isset($_FILES['cover']) && !empty($_FILES['cover']['tmp_name'])){
         
 
         $imgName = md5(time().rand(0,9999)). '.jpg';
-       // imagejpeg($finalImage,'./prod/'.$imgName, 100);      
-        imagejpeg($finalImage, __DIR__. './prod/' .$imgName, 100);      
+        //imagejpeg($finalImage,'./prod/'.$imgName, 100);      
+        imagejpeg($finalImage, './media/products/' .$imgName, 100);      
      
       
-      
+        
     }
+    $UserDao->insertMainImg($imgName) ;
  
     $_SESSION['cover'] = $imgName;
     header('Location:' .$base);

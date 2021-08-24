@@ -95,4 +95,24 @@ private $pdo;
         return true;
     }
 
+    public function insertMainImg($i){
+      
+        $sql = $this->pdo->prepare("UPDATE mainimg SET
+         img = :img
+        WHERE id = 1 ");
+        $sql->bindValue(':img', $i);
+        $sql->execute();
+        return true;
+    }
+
+    public function getMainImg(){
+        $sql = $this->pdo->prepare("SELECT * FROM mainimg WHERE id = 1");
+        $sql->execute();
+        if($sql->rowCount()>0){
+            $data = $sql->fetch(PDO::FETCH_ASSOC);
+            return $data;
+        }
+
+    }
+
 }

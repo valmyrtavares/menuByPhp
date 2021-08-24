@@ -1,20 +1,16 @@
 <?php
+
 require_once 'config.php';
-require 'dao/ProductDaoMysql.php';
-
+require_once 'dao/ProductDaoMysql.php';
+require_once 'dao/UserDaoMysql.php';
 require 'partials/header.php';
+require_once 'models/Auth.php';
 
-require 'models/Auth.php';
+
 
 $daoAuth = new Auth($pdo, $base);
-
-if($_SESSION['token']){
-$userInfo = $daoAuth->checkToken();
-$_SESSION['currentImg'] =  $userInfo->cover;
-}
-//echo $_SESSION['currentImg'];
-
-
+$DaoUser = new UserDaoMysql($pdo);
+$mainImg = $DaoUser->getMainImg();
 
  
 $productDao = new ProductDaoMysql($pdo);
@@ -22,12 +18,9 @@ $products = $productDao->getProducts();
 
 ?>
 <div  class="logo-container">
-     <?php if(!empty($_SESSION['token'])):?> 
-        <img src="<?=$base?>/prod/<?=$userInfo->cover;?>" alt="cover"/>
-        <?php else:?>
-            <img src="<?=$base?>/prod/<?=$_SESSION['currentImg'];?>" alt="cover"/>
-    <?php endif;?>   
+  <img src="<?=$base?>/media/products/<?=$mainImg['img'];?>" alt="cover"/>
 </div>
+
 <h3 class="suggest-chef">Sugestão do Chef</h3>
 
 <div class="content-carrossel">

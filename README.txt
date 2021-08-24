@@ -98,3 +98,7 @@ nasceu do bode que eu tive na hora de fazer deploy com uma aplicação node.
 
 
 Ele é confortável e isso ajuda bastante a quem passa o dia inteiro teclando
+
+Nesse commit a primeira fase está completaente funcional com exceção de que no update a nova
+imagem vem sem o crop e é isso que eu quero resolver agora e depois disso acho que o trablaho é 
+púramente estético. Até começar a segunda parte do aplicativo

@@ -19,7 +19,7 @@
     text-decoration: none; 
     color:white;
     font-family: sans-serif;
-    font-size: 2vw;
+    font-size: 4.5vw;
 
 }
 .hide{
@@ -60,6 +60,13 @@
     color:#FFF;
     text-align: center;
     font-family: monospace;
+    font-size:5vw
+}
+.modal-product h2{
+    color:#FFF;
+    text-align: center;
+    font-family: monospace;
+    font-size:4vw
 }
 .show{
     display:block;

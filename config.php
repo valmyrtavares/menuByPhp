@@ -1,15 +1,15 @@
 <?php
 session_start();
-$base = 'http://localhost/menu';
-//$base = 'http://pratododia.pessoal.ws';
 
 $user = true;
 
+// $base = 'http://pratododia.pessoal.ws';
 // $db_name = 'menu_cardapio';
 // $db_host = 'menu_cardapio.mysql.dbaas.com.br';
 // $db_user = 'menu_cardapio';
 // $db_pass = 'FoodAndSucess';
 
+$base = 'http://localhost/menu';
 $db_name = 'menu';
 $db_host = 'localhost';
 $db_user = 'root';
@@ -24,6 +24,7 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 // pratododiapessoa1
 // Valmyr#tavares1971lima
 //FoodAndSucess
+//http://pratododia.pessoal.ws/
 
 
 

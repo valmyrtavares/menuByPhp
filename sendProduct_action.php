@@ -78,7 +78,7 @@ if(isset($_FILES['img']) && !empty($_FILES['img']['tmp_name'])){
 
         $imgName = md5(time().rand(0,9999)). '.jpg';
         //imagejpeg($finalImage, './media/products/'.$imgName, 100);
-        imagejpeg($finalImage, '/media/products/'.$imgName, 100);
+        imagejpeg($finalImage, './media/products/'.$imgName, 100);
         
        // print_r($finalImage) print_r($image) Ambos dão o objeto vazio e o erro
        //aqui era a falta do ponto antes do jpg
