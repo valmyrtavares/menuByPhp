@@ -23,10 +23,18 @@ require 'partials/header.php';
         <label>Escolha o tipo:</label>
             <select  name="type">
                 <option value="<?=$product->type?>" selected><?=$product->type?></option>
-                <option value="bebidas">Bebidas</option>
-                <option value="pratos">Pratos</option>
+                <option value="suco">Sucos</option>                
+                <option value="refrigerante">Refrigerante</option>
+                <option value="vinhos">Vinhos</option>
+                <option value="cervejas">Cervejas</option>
+                <option value="drinks">Drinks</option>
+                <option value="carnes">Carnes</option>
+                <option value="peixes">Peixes</option>
+                <option value="frutosdomar">Frutos do mar</option>
+                <option value="caseira">Comida Caseira</option>
                 <option value="porcoes">Porçoes</option>
-                <option value="lanches">Lanchers</option>
+                <option value="lancesTradicionais">Lanches Tradicionais</option>
+                <option value="lanchesEspeciais">Lanches Especiais</option>
             </select>
         <div class="check">
             <input type="checkbox" id="chef" name="showcase"  value="<?=$product->showcase;?>"

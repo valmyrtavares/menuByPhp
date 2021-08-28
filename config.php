@@ -18,6 +18,10 @@ $db_pass = '';
 $pdo = new PDO("mysql:dbname=".$db_name.";host=".$db_host, $db_user, $db_pass);
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+$imgWidthGlobal = 600;
+$imgHeightGlobal = 400;
+
+
 //Valmyr#tavares1971lima
 
 // ftp.pratododia.pessoal.ws

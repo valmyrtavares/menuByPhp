@@ -32,8 +32,8 @@ if(isset($_FILES['img']) && !empty($_FILES['img']['tmp_name'])){
 
     if(in_array($newImg['type'],['image/jpeg', 'image/jpg', 'image/png'])){
        
-        $imgWidth = 525;
-        $imgHeight = 350;
+        $imgWidth = $imgWidthGlobal;
+        $imgHeight = $imgHeightGlobal;
 
         list($widthOrigin, $heightOrigin)= getImagesize($newImg['tmp_name']);
         $ratio = $widthOrigin / $heightOrigin;
@@ -93,8 +93,7 @@ if(isset($_FILES['img']) && !empty($_FILES['img']['tmp_name'])){
        // print_r($finalImage) print_r($image) Ambos dão o objeto vazio e o erro
        //aqui era a falta do ponto antes do jpg
        //print_r(imagejpeg);Isso também não fuciona só da pra conferir o arquivo
-       //na pasta media
-      
+       //na pasta media     
       
     }
 
@@ -109,21 +108,12 @@ if(isset($_FILES['img']) && !empty($_FILES['img']['tmp_name'])){
     $productEdit->img = $img;
 }
 
-
-
-
-
-
 $productEdit->id = $id;
 $productEdit->title = $title;
 $productEdit->subtitle = $subtitle;
 $productEdit->type = $type;
 $productEdit->showcase = $showcase;
 $productEdit->price = $price;
-
-
-
-
 
 $daoProduct = new ProductDaoMysql($pdo);
 $product = $daoProduct->update($productEdit);

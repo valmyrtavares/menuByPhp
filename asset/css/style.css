@@ -43,13 +43,15 @@
 }
 
 .modal-product{
-    position: relative;
+    position: absolute;
     width: 73%;
-    min-width: 350px;
-    top: -400px;
+    min-width: 255px;
+    top: 200px;
     left: 13%;
-    background: rgb(138, 54, 216, 1);
+    background:#F1E489;
+    box-shadow: #fadf12;
     display:none;
+
 
 }
 .modal-product img{
@@ -57,13 +59,13 @@
     margin: 41px 3%;
 }
 .modal-product h1{
-    color:#FFF;
+    color:#353535;
     text-align: center;
     font-family: monospace;
     font-size:5vw
 }
-.modal-product h2{
-    color:#FFF;
+.modal-product p{
+    color:#353535;
     text-align: center;
     font-family: monospace;
     font-size:4vw
@@ -83,15 +85,16 @@
     }
 } 
 .modal-product button{
-    color:white;
-    background:none;
-    border:none;
-    position:relative;
-    top: 15px;
-    left: 89%;
+    color: #353535;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 5px;
+    left: 91%;
     font-size: 25px;
-    cursor:pointer;
+    cursor: pointer;
 }
+
 
 .logo-container{
     background: rgb(118, 126, 107, .2);
@@ -125,16 +128,18 @@
 .footer{
     width: 87%;
     padding: 4px;
-    background: burlywood;
+    background: #353535;
     margin: 10px auto;
     text-align: center;
     font-size: 4vw;
     padding: 6px 3px;
     position: relative;
-    bottom: -100px
+    bottom: -100px;
+    color:white;
+    font-family: sans-serif;
 }
 .suggest-chef{
-    color:rgba(150, 122, 202);
+    color:#F8D679;
     font-size:6vw;
     font-family:monospace;  
     text-align: center;
@@ -143,5 +148,5 @@
 
 }
 body{
-    background:hsla(300, 35%, 40%, 0.185);
+    background:#35353588;
 }

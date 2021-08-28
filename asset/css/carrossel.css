@@ -1,5 +1,5 @@
 .carrosel{
-    background: rgb(118, 126, 107, .2);
+    background: #353535d4;
     max-width: 816px;
     width: 86%;
     margin: 0px auto;
@@ -10,6 +10,7 @@ text-align: center;
 font-family: sans-serif;
 margin:2px;
 font-size: 5vw;
+color:#FAD77C;
 
 
 }
@@ -17,7 +18,19 @@ font-size: 5vw;
     max-width: 60%;
     margin: 2px 20%;
 }
-.content-carrossel{
-    
+.content-carrossel{    
     max-height:600px;
+    position: relative;
+}
+.content-button{
+    margin: 0 auto;
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:21%;
+    left:5%;
+}
+.content-button img{
+    width: 5vw;
 }

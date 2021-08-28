@@ -1,7 +1,7 @@
 const key = document.querySelectorAll("[data-type]");
 const target = document.querySelectorAll(".products")
 const modalDetail = document.querySelectorAll(".modal-product")
-let images = document.querySelectorAll('.carrosel');
+//let images = document.querySelectorAll('.carrosel');
 
 
 
@@ -44,12 +44,11 @@ function modal(){
     })
    
     target.forEach((item, index)=> {
-        item.addEventListener('click', ()=>{
-            console.log(index)
+        item.addEventListener('click', ()=>{          
             modalDetail[index].classList.add('show')
         })
     })
-       slideImage()   
+ //      slideImage()   
 }
 
 function onClose(){  
@@ -72,27 +71,41 @@ function tira(index){
 
 
 
-function slideImage(){     
-      console.log(images)
-    let count = 0;
-    const limit = images.length - 1;
-    images[limit].classList.add('show')
-    setInterval(()=>{
+// function slideImage(){      
+//     let count = 0;
+//     const limit = images.length - 1;
+//     images[limit].classList.add('show')
+//     setInterval(()=>{        
         
-        
-        images.forEach(item => {
-            item.classList.remove('show');
-        })
-       images[count].classList.add('show')
+//         images.forEach(item => {
+//             item.classList.remove('show');
+//         })
+//        images[count].classList.add('show')
     
-        count++;
-        if(count>limit){
-        count = 0
-        }
-    },3000)
-}
+//         count++;
+//         if(count>limit){
+//         count = 0
+//         }
+//     },3000)
+// }
+
+// function teste(index){
+//   console.log(images[index]);
+//     modalDetail[index].classList.add('show')
+// }
+
+// function openCarrossel(){
+//     images.forEach((item,index) =>{
+//         item.addEventListener('click', ()=>{
+//             modalDetail[index].classList.add('show')
+//             console.log(modalDetail[index])
+//             console.log(index)
+//         })
+//     })
+// }
 
 
+// openCarrossel()
 
 
   

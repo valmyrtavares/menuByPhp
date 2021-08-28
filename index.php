@@ -29,8 +29,13 @@ $products = $productDao->getProducts();
             <?php require 'partials/carrossel.php';?>
         <?php endif; ?>
     <?php endforeach;?>
+    <?php if($product['showcase']==1): ?>        
+    <div class="content-button">
+        <img class="btn" src="<?=$base?>/media/icon/left.png"/>
+        <img class="btn" src="<?=$base?>/media/icon/right.png"/>
+    </div>
+    <?php endif; ?>
 </div>
-
 <h1 data-type>Bebidas</h1>
 <div class="hide">
     <h1 data-type class="sub-first">Alcoólicas </h1>
@@ -160,6 +165,8 @@ $products = $productDao->getProducts();
 
 
 <script src="asset/js/script.js"></script>
+<script type="module" src="asset/js/js/script.js"></script>
+
 <?php require 'partials/footer.php'?>
 
 </body>

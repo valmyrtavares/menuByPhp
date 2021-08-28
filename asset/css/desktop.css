@@ -57,10 +57,13 @@
     .admin-edit{
         font-size:15px;
     }
+    .modal-product p{
+        font-size:20px !important;
+    }
 }
-@media(max-width:400px){
+@media(max-width:430px){
     .modal-product {
-        left:0 !important;
+        left:8% !important;
     }  
     .form-send input{
         height:60px;
