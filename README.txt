@@ -106,3 +106,12 @@ púramente estético. Até começar a segunda parte do aplicativo
 O aplicativo chegou nos 95% da primeira fase. Não acho que nada seja definitivo, nem acabar nem começar
 por isso vou iniciar os trabalhos da próxima fase mesmo tendo alguns rabos do primeiro, por isso vou comitar
 como fim da primeira parte
+
+Fiz a estilização provisória do modal de detalhes coloquei dois botões um de cancelar que fecha o modal
+e outro que deve mandar o produto para o request_action. Como tomei um erro meio loko agora, senti falta de 
+dar os commits comentar o andamento dos trabalhos. Porque quando a coisa para de funcionar e não estamos organizados, 
+levamos um tempo gigante para achar o erro e voltar. Então o hábito não só de didático mas profissional de ir commitando o 
+que se faz é urgente. Então agora o código está funcionando. Fiz um request_action que está fora do sistema por enquanto
+e que eu tentei acessar via form não deu certo. Travou tudo. E nem comentando o código eu consegui fazer voltar. Só voltou 
+quando eu de fato apaguei as linhas. Esse procedimento de comentar código é relativo. Vou comitar agora e tentar manter
+as coisas em ordem daqui pra frente.
