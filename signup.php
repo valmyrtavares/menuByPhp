@@ -7,9 +7,7 @@ require 'partials/header.php';
             <label>Nome</label>
             <input type="text" name="name"/>
             <label>Estabelecimento</label>
-            <input type="text" name="store"/>
-            <label>Imagem</label>
-            <input type="file" name="cover"/>
+            <input type="text" name="store"/>          
             <label>Email</label>
             <input type="email" name="email"/>
             <label>Cargo</label>

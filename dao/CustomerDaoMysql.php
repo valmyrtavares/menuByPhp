@@ -9,16 +9,17 @@ class CustomerDaoMysql implements CustomerDAO {
     }
 
     public function insert($u){
-          
+         
         $sql = $this->pdo->prepare("INSERT INTO customer 
-        (name, email, phone, birthdate, date) 
+        (name, email, phone, birthdate, date, token) 
         VALUES
-        (:name, :email, :phone, :birthdate, :date)");
+        (:name, :email, :phone, :birthdate, :date, :token)");
         $sql->bindValue(':name', $u->name);
         $sql->bindValue(':email', $u->email);
         $sql->bindValue(':phone', $u->phone);
         $sql->bindValue(':birthdate', $u->birthdate);       
         $sql->bindValue(':date', $u->date );
+        $sql->bindValue(':token', $u->token );
        
              
         $sql->execute();
@@ -31,6 +32,26 @@ class CustomerDaoMysql implements CustomerDAO {
         if($sql->rowCount()>0){
             $data = $sql->fetchAll(PDO::FETCH_ASSOC);
            return $data;
+        }
+    }
+    public function checkTokenCustomer($t){       
+        $sql = $this->pdo->prepare("SELECT * FROM customer WHERE token = :token");
+        $sql->bindValue(':token', $t);
+        $sql->execute();
+        if($sql->rowCount()>0){
+            $data = $sql->fetch(PDO::FETCH_ASSOC);
+            return $data;
+        }
+        return false;
+
+    }
+    public function findByPhone($p){
+        $sql = $this->pdo->prepare("SELECT * FROM customer WHERE phone = :phone");
+        $sql->bindValue(':phone', $p);
+        $sql->execute();
+        if($sql->rowCount()>0){
+            $data = $sql->fetch(PDO::FETCH_ASSOC);
+            return $data;
         }
     }
 

@@ -88,3 +88,24 @@ font-size: 5vw;
     max-width:20px;
     margin-right: 10px;
   }
+
+  .content-form-login-customer{
+    width: 60%;
+    margin: 10px auto;
+    background-color: rgb(167, 164, 164, .3);
+    padding: 10px;
+}
+.content-form-login-customer p, label{
+  color:white;
+  text-align: center;
+}
+
+.content-form-login-customer a{
+  color:white;
+  font-size:18px;
+}
+.content-form-login-customer input{
+  width: 60%;
+  margin: 10px 20%;
+  font-size:18px;
+}

@@ -13,5 +13,6 @@ class Customer{
 interface CustomerDAO{    
     public function insert($u);
     public function getCustomers();
+    public function checkTokenCustomer($token);
     
 }

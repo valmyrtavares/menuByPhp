@@ -19,10 +19,13 @@
 
 
     <div  class="modal-product ">
-        <button onClick="onClose()"> X</button>
         <h1 class="teste-produtos"> <?= $product['title']; ?> </h1>
         <img src="<?=$base;?>/media/products/<?=$product['img']?>" alt="teste"/>
-        <p><?=$product['subtitle']; ?></p>    
+        <p><?=$product['subtitle']; ?></p>   
+        <div>
+            <button style="background:gree;">Pedir</button>
+            <button style="background:red;" onClick="onClose()">Fechar</button>
+        </div> 
     </div>
 
     <!-- Esse é um texto fake que está aqui para preencher mais ou menos o espaço que os chefes de restaurante terão para usar dentro do aplicativo

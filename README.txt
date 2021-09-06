@@ -102,3 +102,7 @@ Ele é confortável e isso ajuda bastante a quem passa o dia inteiro teclando
 Nesse commit a primeira fase está completaente funcional com exceção de que no update a nova
 imagem vem sem o crop e é isso que eu quero resolver agora e depois disso acho que o trablaho é 
 púramente estético. Até começar a segunda parte do aplicativo
+
+O aplicativo chegou nos 95% da primeira fase. Não acho que nada seja definitivo, nem acabar nem começar
+por isso vou iniciar os trabalhos da próxima fase mesmo tendo alguns rabos do primeiro, por isso vou comitar
+como fim da primeira parte

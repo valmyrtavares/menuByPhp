@@ -1,0 +1,14 @@
+@media(max-width:430px){
+    .modal-product {
+        left:8% !important;
+        height: 70vh;
+    }  
+    .modal-product img {
+       width:94% !important;
+       margin: 41px 3% !important;
+    } 
+    .form-send input{
+        height:60px;
+        font-size: 30px;
+    }   
+}

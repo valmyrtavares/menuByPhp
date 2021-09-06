@@ -20,9 +20,7 @@ $table = filter_input(INPUT_GET, 'mesa')
             <input type="text" name="birthdate" id="birthdate"/>            
            
             <input type="hidden" name="type" value="client"/>
-            <input type="hidden" name="table" value="<?=$table?>"/>
-            
-            
+            <input type="hidden" name="table" value="<?=$table?>"/> 
                   
            
             <div style="display:flex; width:70%">

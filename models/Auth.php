@@ -20,11 +20,19 @@ class Auth{
         if(!empty($_SESSION['token'])){
             $token = $_SESSION['token'];
            $user = $this->dao->findByToken($token);
-               return $user;
-            
+               return $user;            
         }
         header("Location: ".$base);
+    }
 
+    public function checkTokenCustomer(){
+        if(!empty($_SESSION['tokenCustumer'])){          
+            $token = $_SESSION['tokenCustumer'];
+           $customer = $this->daoCustomer->checkTokenCustomer($token);
+           return $customer;          
+        }       
+       
+  
     }
 
     public function emailExist($email){
@@ -52,7 +60,9 @@ class Auth{
     public function registerCustomer($name, $email, $phone, $birthdate){
         $date = new DateTime();
         $date->setTimezone(new DateTimeZone('America/Sao_Paulo'));
-        $now = $date->format('d/m/Y H:i:s');        
+        $now = $date->format('Y/m/d H:i:s');    
+        $token = md5(time()).rand(0, 9999);       
+          
         
         $newCustomer = new Customer();
         $newCustomer->name = $name;
@@ -60,9 +70,12 @@ class Auth{
         $newCustomer->phone = $phone;
         $newCustomer->birthdate = $birthdate;
         $newCustomer->date = $now;          
+        $newCustomer->token = $token;          
+     
        
 
         $this->daoCustomer->insert($newCustomer);
+        $_SESSION['tokenCustumer'] = $token;
         return true;
        
     }

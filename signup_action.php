@@ -18,27 +18,31 @@ $table = filter_input(INPUT_POST, "table");
 
 if($type==="client"){
     if(!$name && !$phone){      
-      $auth->registerCustomer("Desconhecido", "","",""); 
-      header("Location: " .$base);
-      exit;
-    }
-    $birthdate = explode('/', $birthdate);
-    if(count($birthdate)!=3){
-        $_SESSION['flash'] = "Data de nascimento incompleta";
-        header("Location: " .$base. "/signup_Customer.php");
-        
-    }
-    $birthdate = $birthdate[2].'-' .$birthdate[1]. '-' .$birthdate[0];
-   if(strtotime($birthdate)===false){
-       $_SESSION['flash'] = $birthdate. 'Não é uma data de aniversário válida';
-       header("Location: " .$base. "/signup_Customer.php");
+        $auth->registerCustomer("Desconhecido", "","",""); 
+        header("Location: " .$base);
+        exit;
+    }else{
+        $birthdate = explode('/', $birthdate);
+        if(count($birthdate)!=3){       
+            $_SESSION['flash'] = "Data de nascimento incompleta";
+            header("Location: " .$base. "/signup_Customer.php");
+            
+        }    
+        $birthdate = $birthdate[2].'-' .$birthdate[1]. '-' .$birthdate[0];
+       if(strtotime($birthdate)===false){
+           $_SESSION['flash'] = $birthdate. 'Não é uma data de aniversário válida';
+           header("Location: " .$base. "/signup_Customer.php");
+           exit;
+       } 
+
+       $auth->registerCustomer($name, $email, $phone, $birthdate); 
+       //$attendaceDao->attendaceDao->insert($table);
+       
+       header("Location: " .$base);
        exit;
-   } 
-    $auth->registerCustomer($name, $email, $phone, $birthdate); 
-    //$attendaceDao->attendaceDao->insert($table);
+    }    
     
-    header("Location: " .$base);
-    exit;
+ 
 }else{
    
     if(isset($_FILES['cover']) && !empty($_FILES['cover']['tmp_name'])&& $type==="admin"){   

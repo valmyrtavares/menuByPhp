@@ -16,7 +16,10 @@ $mainImg = $DaoUser->getMainImg();
 $productDao = new ProductDaoMysql($pdo);
 $products = $productDao->getProducts();
 
+ $infoCustomer = $daoAuth->checkTokenCustomer();
+ 
 ?>
+
 <div  class="logo-container">
   <img src="<?=$base?>/media/products/<?=$mainImg['img'];?>" alt="cover"/>
 </div>
