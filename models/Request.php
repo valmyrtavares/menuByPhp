@@ -11,9 +11,9 @@ class Request{
 }
 
  interface RequestDAO {
-     public function getProducts();
-     public function insert(Product $pr);
-     public function delete($id);
-     public function findById($id); 
-     public function update(Product $id); 
+    //  public function getProducts();
+     public function insert(Request $pr);
+    //  public function delete($id);
+    //  public function findById($id); 
+    //  public function update(Product $id); 
  }

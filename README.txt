@@ -115,3 +115,17 @@ que se faz é urgente. Então agora o código está funcionando. Fiz um request_
 e que eu tentei acessar via form não deu certo. Travou tudo. E nem comentando o código eu consegui fazer voltar. Só voltou 
 quando eu de fato apaguei as linhas. Esse procedimento de comentar código é relativo. Vou comitar agora e tentar manter
 as coisas em ordem daqui pra frente.
+
+Nesse comit eu vou mandar o request que é um pedido para o banco de dados. Nesse pedido deve exitir um pratos, 
+um cliente, o horário que ele entrou, o preço do que ele pediu, o nome, para que essa informação seja usada para 
+o proprio cliente e para o estabelecimento
+Pra isso eu coloquei dentro do product que é onde temos o modal dois botões um para sair e outro para fazer o pedido. 
+Caso o cliente opte por fazer o pedido ele manda para o request_action o titulo, preço e id do pedido. Eu tive que fazer
+o nosso RequestDaoMysql com a primeira função de insert. Esse insert revebe do requeest_action esses 3 itens dentro de um
+objeto Request e dentro do RequestDaoMysql eu faço uma consulta ao checkTokenCustomer e trago o id nome e horário do cliente para intergrar
+as colunas do meu request
+OBS Um ponto que eu bati cabeça é o private pdo que está dentro da classe request. Eu estava instanciando a classe auth fora 
+da classe e não coneguia levar o infoAuth para dentro da function insert. Estava faltando implementar o $this->pdo e o $this->base
+e colocar o private pdo dentro da classe para que ela reconhecesse e eu conseguisse cruzar os dados do product com o customer para
+fazer a tabela request. Nesse ponto exato estou conseguindo através de um print_r as duas tabelas e vou enviar para tabela request.
+Nesse ponto eu ainda não enviei. Mas é o que farei no próximo commit

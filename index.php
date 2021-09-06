@@ -16,7 +16,7 @@ $mainImg = $DaoUser->getMainImg();
 $productDao = new ProductDaoMysql($pdo);
 $products = $productDao->getProducts();
 
- $infoCustomer = $daoAuth->checkTokenCustomer();
+$infoCustomer = $daoAuth->checkTokenCustomer();
  
 ?>
 

@@ -23,7 +23,12 @@
         <img src="<?=$base;?>/media/products/<?=$product['img']?>" alt="teste"/>
         <p><?=$product['subtitle']; ?></p>   
         <div>
+            <form  method="POST" action="request_action.php">
+                <input type="hidden" name="id" value="<?=$product['id']?>">
+                <input type="hidden" name="title" value="<?=$product['title']?>">
+                <input type="hidden" name="price" value="<?=$product['price']?>">
             <button style="background:gree;">Pedir</button>
+            </form>
             <button style="background:red;" onClick="onClose()">Fechar</button>
         </div> 
     </div>
