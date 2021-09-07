@@ -32,6 +32,10 @@ if(!$_SESSION['tokenCustumer'] && !$_SESSION['token']){
     <p style="color:white;">Ola <?= $infoCustomer['name']; ?> Seja Bem vindo!!</p>
     <?php endif ?> 
 </div>
+<?php if($_SESSION['nocustomer']):?>
+    <h2 class="warning"><?= $_SESSION['nocustomer'];?></h2>
+    <?= $_SESSION['nocustomer']=""?>
+<?php endif; ?>
 
 <h3 class="suggest-chef">Sugestão do Chef</h3>
 

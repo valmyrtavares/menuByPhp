@@ -161,3 +161,11 @@ Depois disso tenho que tratar do login do customer, em que condições ele se da
  dentro do requestList, Também fiz o getRequest para trazer os dados do banco. Amanhã eu organizo tudo na tela
  bonitinho... 
  E no index tirei um espaço do endereço que estava atrapalhando.
+
+ Neste commit em primeiro lugar tivemos o problema de quando se faz um pedido sem um cliente logado. Ele diz que o 
+ infoCustomer não existe e trava. Eu coloquei uma session dentro do request_action mostrando uma mensagem
+ na home que não é possível fazer pedidos sem que um cliente esteja logado. Acrescentei ao objeto request
+ o nome do cliente que era importante para compor a lista que viria do DB  Criei uma tela que seria de cozinha 
+ que mostra todos os pedidos mesa e nome do cliente e o horário exato que ele faz o pedido. Fiz as alterações
+ tanto no banco de dados local quanto no do localweb. Também criei um novo request.css mas aindas não usei
+ Fiz as altereações no RequestDaoMysql para que ele aceite os novos dados e os novos nomes de tabela que eu inseri
