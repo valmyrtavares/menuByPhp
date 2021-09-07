@@ -17,11 +17,19 @@ $productDao = new ProductDaoMysql($pdo);
 $products = $productDao->getProducts();
 
 $infoCustomer = $daoAuth->checkTokenCustomer();
- 
+
+
+if(!$_SESSION['tokenCustumer'] && !$_SESSION['token']){
+ header('Location:'.$base.' /loginCustomer.php' );
+}
+
 ?>
 
 <div  class="logo-container">
   <img src="<?=$base?>/media/products/<?=$mainImg['img'];?>" alt="cover"/>
+   <?php if($_SESSION['tokenCustumer']): ?>
+    <p style="color:white;">Ola <?= $infoCustomer['name']; ?> Seja Bem vindo!!</p>
+    <?php endif ?> 
 </div>
 
 <h3 class="suggest-chef">Sugestão do Chef</h3>

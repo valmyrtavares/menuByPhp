@@ -4,7 +4,7 @@ $table = filter_input(INPUT_GET, 'mesa');
 echo $table;
 
 ?>
-<div class="content-form-login-customer">
+<div class="content-form-login-customer" style="margin-bottom:70vh;">
     <p>Se já é nosso cliente preencha seu número. Senão cadastre-se e ganhe uma bebida gratis</p>
     <form class="form-send" method="POST" action="login_action.php" >
 
@@ -31,3 +31,4 @@ echo $table;
     mask: '(00)00000-0000'
   }); 
 </script>
+<?php require 'partials/footer.php'?>

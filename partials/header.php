@@ -21,6 +21,7 @@ require_once 'config.php';
        <a href="<?=$base;?>/signup.php">Cadastrar</a>
        <a href="<?=$base;?>/sendProduct.php">Enviar Produts</a>
        <a href="<?=$base;?>/logout.php">Sair</a>
+       <a href="<?=$base;?>/logoutCustomer.php">Sair Cliente</a>
    </div>
    <!-- <p>Ola!! <?=$infoCustomer['name'] ?></P> -->
 <?php endif ?>

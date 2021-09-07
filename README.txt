@@ -141,3 +141,17 @@ o insert
 Agora eu tenho um desafio que é primeiro direcionar o sistema para index se tudo for feito e para uma
 mensagem de erro se der errado. 
 Depois disso tenho que tratar do login do customer, em que condições ele se da
+
+ O index/home já está direcionado quando eu mando um request para o DB, Essa foi a parte fácil
+ Na verdade tudo foi fácil dessa vez. Eu criei uma $_SESSION['tokenCustumer'] que é preenchida se houver 
+ o cadastro do cliente ou se ele simplesmente se logar com o numero de telefone. Dentro do home eu fiz um
+ if para se houver A $_SESSION['tokenCustomer] o nome do cliente aparece 
+ E ainda fiz um outro if que checa se exite session do admin e session do cliente se não houver nenhum dos dois
+ Ele encaminha para o login do cliente perguntando o celular. Dentro do login do cliente mais abaixo eu deixei o 
+ login do admin, mas fica em uma posição que só quem sabe que faz o scrool. Seria para o cliente normal não ver, 
+ mas se ver não tem a senha. Se o camarada se cadastrar também aparece as boas vindas pra ele que acabou de 
+ se cadastrar. Se ele pular o cadastro ele é automáticamente cadastrado com um token e o nome de desconhecido. 
+ Depois vou por se o cara tiver um value de desconhecido não põe nada, ou que pena. Não sei, Mas coloquei o código
+ da parte que não tem nanme nem email que manda o objeto vazio para o registro somente com o desconhecido no lugar do 
+ nome para o aparte de login_action. Eu ia fazer uma ginástica mas ainda bem que tomei essa solução. 
+ Então agora se ele se cadastrar ou não ele é notado pelo sistema E se não tiver nenhuma seção a tela de cadastro abre.

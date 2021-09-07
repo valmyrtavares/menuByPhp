@@ -30,4 +30,6 @@ $title = filter_input(INPUT_POST,'title');
 
     $daoRequest->insert($newRequest);
 
+    header('Location: ' .$base);
+
     
