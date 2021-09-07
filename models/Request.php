@@ -1,12 +1,13 @@
 <?php
 class Request{
     public $id;
-    public $date;
-    public $table;
-    public $id_product;
+    public $dat;
+    public $mesa;
     public $id_customer;
-    public $attendance;
-    public $showcase;
+    public $id_product;
+    public $product_title;
+    public $price;
+    
 
 }
 

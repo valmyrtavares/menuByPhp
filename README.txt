@@ -129,3 +129,15 @@ da classe e não coneguia levar o infoAuth para dentro da function insert. Estav
 e colocar o private pdo dentro da classe para que ela reconhecesse e eu conseguisse cruzar os dados do product com o customer para
 fazer a tabela request. Nesse ponto exato estou conseguindo através de um print_r as duas tabelas e vou enviar para tabela request.
 Nesse ponto eu ainda não enviei. Mas é o que farei no próximo commit
+
+Eu mandei os dados do request para o banco de dados. Sofri um pouco por conta de um erro de 
+query que dizia que algo estava errado perto da linha 2. Uma solução para isso foi mandar um dado de
+cada vez e ir vendo onde é que estava dando o erro. Eu estava usando o termo mesa no DB e o termo table na 
+query. Esse foi um dos BOs. 
+Outra mudança foi instanciar o Auth dentro do request_action e mandar o objeto já todo preenchido para o 
+RequestDaoMysql, essa foi uma das soluções. Eu apageuei as outras funções do RequestDaoMysql e deixi apenas
+o insert
+
+Agora eu tenho um desafio que é primeiro direcionar o sistema para index se tudo for feito e para uma
+mensagem de erro se der errado. 
+Depois disso tenho que tratar do login do customer, em que condições ele se da
