@@ -155,3 +155,9 @@ Depois disso tenho que tratar do login do customer, em que condições ele se da
  da parte que não tem nanme nem email que manda o objeto vazio para o registro somente com o desconhecido no lugar do 
  nome para o aparte de login_action. Eu ia fazer uma ginástica mas ainda bem que tomei essa solução. 
  Então agora se ele se cadastrar ou não ele é notado pelo sistema E se não tiver nenhuma seção a tela de cadastro abre.
+
+ Criei um requestList e chamei dentro dele o RequestDaoMysql com o getRequest trazendo todas as litas de pedidos
+ feitos, refiz os links do header trocando para os que eu não preiso  mais e coloquei os requests jogados
+ dentro do requestList, Também fiz o getRequest para trazer os dados do banco. Amanhã eu organizo tudo na tela
+ bonitinho... 
+ E no index tirei um espaço do endereço que estava atrapalhando.

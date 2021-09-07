@@ -16,10 +16,11 @@ require_once 'config.php';
        <a href="<?=$base;?>">Home</a>
        <!-- <a href="<?=$base;?>/editUser.php">Editar perfil</a>
        <a href="<?=$base;?>/login.php">Login</a> -->
-       <a href="<?=$base;?>/customers_list.php">Lista de clientes</a>
-       <a href="<?=$base;?>/signup_Customer.php">Cliente login</a>
-       <a href="<?=$base;?>/signup.php">Cadastrar</a>
+       <!-- <a href="<?=$base;?>/customers_list.php">Lista de clientes</a>
+       <a href="<?=$base;?>/signup_Customer.php">Cliente login</a> -->
+       <!-- <a href="<?=$base;?>/signup.php">Cadastrar</a> -->
        <a href="<?=$base;?>/sendProduct.php">Enviar Produts</a>
+       <a href="<?=$base;?>/requestList.php">Pedidos feitos</a>
        <a href="<?=$base;?>/logout.php">Sair</a>
        <a href="<?=$base;?>/logoutCustomer.php">Sair Cliente</a>
    </div>

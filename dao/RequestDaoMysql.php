@@ -25,5 +25,17 @@ class RequestDaoMysql implements RequestDAO{
         
     }
 
+    public function getRequests(){
+        $array = [];
+        $sql = $this->pdo->prepare("SELECT * FROM request
+         ORDER BY id DESC");
+         $sql->execute();
+         
+        if($sql->rowCount() > 0 ){
+        $data = $sql->fetchAll(PDO::FETCH_ASSOC);
+        $array = $data;
+        } 
+        return $array;
+    }
 }
 

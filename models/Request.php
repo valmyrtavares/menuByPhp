@@ -12,7 +12,7 @@ class Request{
 }
 
  interface RequestDAO {
-    //  public function getProducts();
+     public function getRequests();
      public function insert(Request $pr);
     //  public function delete($id);
     //  public function findById($id); 

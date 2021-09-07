@@ -16,11 +16,12 @@ $mainImg = $DaoUser->getMainImg();
 $productDao = new ProductDaoMysql($pdo);
 $products = $productDao->getProducts();
 
+
 $infoCustomer = $daoAuth->checkTokenCustomer();
 
 
 if(!$_SESSION['tokenCustumer'] && !$_SESSION['token']){
- header('Location:'.$base.' /loginCustomer.php' );
+ header('Location:'.$base. '/loginCustomer.php' );
 }
 
 ?>
