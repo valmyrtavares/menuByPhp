@@ -9,6 +9,10 @@ $type = filter_input(INPUT_POST, 'type');
 $phone = filter_input(INPUT_POST, 'phone');
 $table = filter_input(INPUT_POST, 'table');
 
+$mesa = ($table ? $table: 100);
+$_SESSION['tableNumber']=$mesa;
+
+
 if($type==='client'){
     if(!$phone){
         $auth = new Auth($pdo, $base);

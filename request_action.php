@@ -26,7 +26,7 @@ if(!$infoCustomer){
     $daoRequest = new RequestDaoMysql($pdo);
     $newRequest = new Request();
     $newRequest->dat = $now;
-    $newRequest->mesa = 23;
+    $newRequest->mesa = $_SESSION['tableNumber'];
     $newRequest->id_customer = $infoCustomer['idcustumer'];
     $newRequest->name_customer = $infoCustomer['name'];
     $newRequest->id_product = $id;

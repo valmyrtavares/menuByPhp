@@ -15,6 +15,9 @@ $phone = filter_input(INPUT_POST, 'phone');
 $birthdate = filter_input(INPUT_POST, 'birthdate');
 $table = filter_input(INPUT_POST, "table");
 
+$mesa = ($table ? $table: 100);
+$_SESSION['tableNumber']=$mesa;
+
 
 if($type==="client"){
     if(!$name && !$phone){      

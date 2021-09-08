@@ -169,3 +169,9 @@ Depois disso tenho que tratar do login do customer, em que condições ele se da
  que mostra todos os pedidos mesa e nome do cliente e o horário exato que ele faz o pedido. Fiz as alterações
  tanto no banco de dados local quanto no do localweb. Também criei um novo request.css mas aindas não usei
  Fiz as altereações no RequestDaoMysql para que ele aceite os novos dados e os novos nomes de tabela que eu inseri
+
+ Aqui abrimos mais uma questão, que é onde colocaremos o número da mesa. A princípio eu pensei em colocá-lo na 
+ tabela customer, só que o mesmo cliente pode usar mesas diferentes em dias deiferents. Logo esse dado tem 
+ que pertencer ao request, apesar dele ser mandado na hora da criação ou identificação do cliente. Então a solução
+ que eu encontrei por enquanto é guardar o número das mesa dentro de uma session, para utilizá-lo no meomento
+ de ser feito o primeiro pedido FUNCIONOU
