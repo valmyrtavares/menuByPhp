@@ -17,7 +17,7 @@ echo $table;
                 <input type="text" id="phone-mask" name="phone"/>   
                 <input type="hidden" name="type" value="client"/>
                  <input type="hidden" name="table" value="<?=$table?>"/> 
-                <div style="display:flex; width: 50%; margin: 5px auto;">
+                <div> 
                     <input type="submit" value="Enviar">
                     <input type="submit" value="Pular">
                 </div>        

@@ -1,0 +1,7 @@
+.form-send div{
+    display:flex;
+    width: 50%;
+}
+.form-send div input{
+   flex:1;
+ }

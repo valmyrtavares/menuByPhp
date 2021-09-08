@@ -98,6 +98,7 @@ font-size: 5vw;
 .content-form-login-customer p, label{
   color:white;
   text-align: center;
+  font-family:sans-serif ;
 }
 
 .content-form-login-customer a{

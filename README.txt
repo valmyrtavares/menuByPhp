@@ -207,3 +207,5 @@ Depois disso tenho que tratar do login do customer, em que condições ele se da
  em outra ocasião e agora o que ele tem a fazer é usar o numero para voltar a sua conta. Tive que criar uma nova function dentro do auth 
  de buscar o número de telefone trazendo o objeto encontrado findByPhone
  E fiz uma breve estilização na mensagem de telefone cadastrado, fiz uma class para usa-lo sem precisar reinventar a roda
+
+ Estilizei a tela de login do cliente inicial, só porque estava realmente muito torta

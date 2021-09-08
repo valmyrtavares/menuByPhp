@@ -16,4 +16,21 @@
         margin: 5px auto !important;
         font-size: 15px !important;
     }
+    .content-form-login-customer{
+        width: 100%;      
+    }
+    .content-form-login-customer input{
+        width: 90%;       
+        margin:10px 2%;
+        font-size:20px;
+        text-align: center;
+    }
+    .content-form-login-customer div{
+        display: flex;
+        width: 95% !important;
+    }
+    .content-form-login-customer div input{
+        font-size:20px;
+    }
+    
 }
