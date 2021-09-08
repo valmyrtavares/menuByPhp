@@ -37,9 +37,17 @@ if($type==="client"){
            header("Location: " .$base. "/signup_Customer.php");
            exit;
        } 
+        $customerPhone = $auth->findByPhone($phone);
+       if($customerPhone){
+           $_SESSION['registerphone']="Esse número já foi cadastrado por " .$customerPhone['name']. 
+           ' caso seja você, volte a tela anterior e faça seu login usando esse núdmeo';
+           header('Location: ' .$base. '/signup_Customer.php');
+            exit;          
+       }
+
 
        $auth->registerCustomer($name, $email, $phone, $birthdate); 
-       //$attendaceDao->attendaceDao->insert($table);
+       
        
        header("Location: " .$base);
        exit;

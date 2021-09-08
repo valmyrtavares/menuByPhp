@@ -8,6 +8,12 @@ $table = filter_input(INPUT_GET, 'mesa')
       <?=$_SESSION['flash']; ?>
       <?=$_SESSION['flash']=" ";?>
     <?php endif; ?>
+    <?php if(!empty($_SESSION['registerphone'])):?>
+      <div class="warning">
+        <?=$_SESSION['registerphone']; ?>
+        <?=$_SESSION['registerphone']=" ";?>
+    </div>
+    <?php endif; ?>
     <?php echo"Essa é a Mesa = ".$table;?>
     <form class="form-send" method="POST" action="signup_action.php" >
             <label>Nome</label>
@@ -30,6 +36,7 @@ $table = filter_input(INPUT_GET, 'mesa')
 
     </form>
 </div>
+<?php require 'partials/footer.php'?>
 <script src="https://unpkg.com/imask"></script>
 <script>
     var phoneMask = IMask(

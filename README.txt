@@ -198,3 +198,12 @@ Depois disso tenho que tratar do login do customer, em que condições ele se da
  a partir das eu consigo trazer os pedidos dasquele cliente. O problema é que alés disso eu terei que fazer mais uma coluna
  dizendo quais são os pedidos dasquele dia e os pedidos de outro dia que ele veio para não mistura, mas isso é uma feature 
  para o futuro. Eu tenho a pretensão de acabar esse projeto ainda essa semana.
+
+ Um dos problemas que provavelmente eu esteja sofrendo no localweb seja o fato de que muitos dos usuários que eu estou tentando
+ logar não tem token e ai o sistema quebra. Então eu cortei todo mundo que não tem token ISSO PRECISA SER FEITO NO localweb
+ Eu nesse commit implementei a checagem se o número de zap já foi cadastrado, porque eu mesmo cadastrei várias vezes o mesmo
+ Se ele é um critério de busca tem que ter uma checagem na hora de fazer signup. Eu fiz esse verificação e tive que criar uma nova
+ session avisando quando o numero logado já exeite, e isso deve seignificar que o usuário ja´ logou o numero naquele estabelecimento
+ em outra ocasião e agora o que ele tem a fazer é usar o numero para voltar a sua conta. Tive que criar uma nova function dentro do auth 
+ de buscar o número de telefone trazendo o objeto encontrado findByPhone
+ E fiz uma breve estilização na mensagem de telefone cadastrado, fiz uma class para usa-lo sem precisar reinventar a roda

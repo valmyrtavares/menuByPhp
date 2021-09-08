@@ -11,4 +11,9 @@
         height:60px;
         font-size: 30px;
     }   
+    .warning{
+        width: 90% !important;
+        margin: 5px auto !important;
+        font-size: 15px !important;
+    }
 }

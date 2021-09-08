@@ -22,8 +22,8 @@ if($type==='client'){
     }else{
         $daoCustomer = new CustomerDaoMysql($pdo);
         $customer = $daoCustomer->findByPhone($phone);
-        if($customer){        
-            $_SESSION['tokenCustumer'] = $customer['token'];
+        if($customer){              
+            $_SESSION['tokenCustumer'] = $customer['token'];         
             header('Location:'.$base);
             exit;
         }else{

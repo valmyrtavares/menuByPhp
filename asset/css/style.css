@@ -161,3 +161,11 @@
 body{
     background:#35353588;
 }
+.warning{
+    color:yellow;
+    text-align: center;
+    width: 500px;
+    margin:25px auto;
+    font-family: sans-serif;
+    font-size:20px;
+}

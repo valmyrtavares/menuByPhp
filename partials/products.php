@@ -11,9 +11,7 @@
         <?php if($_SESSION['token']):?>
             <a href="<?=$base;?>/editProducts.php?id=<?=$product['id'];?>" class='admin-edit'>Editar prato</a>
         <?php endif;?>
-    </div>
-
-    
+    </div>  
     
 
 

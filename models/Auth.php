@@ -39,6 +39,11 @@ class Auth{
         return $this->dao->findByEmail($email)?true:false;
     }
 
+    public function findByPhone($phone){
+        $data = $this->daoCustomer->findByPhone($phone);
+        return $data;
+    }
+
     public function registerUser($name, $store, $email, $type, $password, $imgName ){
 
         $hash = password_hash($password, PASSWORD_DEFAULT);
