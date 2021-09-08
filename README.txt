@@ -209,3 +209,8 @@ Depois disso tenho que tratar do login do customer, em que condições ele se da
  E fiz uma breve estilização na mensagem de telefone cadastrado, fiz uma class para usa-lo sem precisar reinventar a roda
 
  Estilizei a tela de login do cliente inicial, só porque estava realmente muito torta
+
+ Eu criei uma tela de garçou que mostra a mesa o nome do cliente o valor e o tempo que ofi pedido o prato. Ainda falta acrescentar
+ um botão de delete do prato no casao do cliente cancelar. EU ia por esse botão na tela do cliente mas achei ruim. É preferível que 
+ ele chame o garçou e peça para cancelar, acho que isso da mais responsabildiade para o cliente, tem que chamar o garon. 
+ Eu fiz essa tela fora do index, como uma tela de admin e consegui organizar por mesa, acho que estou chegando a um ponto. 

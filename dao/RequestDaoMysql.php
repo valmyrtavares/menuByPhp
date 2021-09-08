@@ -30,7 +30,7 @@ class RequestDaoMysql implements RequestDAO{
     public function getRequests(){
         $array = [];
         $sql = $this->pdo->prepare("SELECT * FROM request
-         ORDER BY id DESC");
+         ORDER BY mesa ASC");
          $sql->execute();
          
         if($sql->rowCount() > 0 ){
@@ -42,7 +42,7 @@ class RequestDaoMysql implements RequestDAO{
 
     public function findByToken($t){
         $sql = $this->pdo->prepare("SELECT * FROM request
-        WHERE token = :token ");
+        WHERE token = :token");
         $sql->bindValue(':token', $t);
         $sql->execute();
         if($sql->rowCount()>0){
