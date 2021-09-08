@@ -4,6 +4,7 @@ class Request{
     public $dat;
     public $mesa;
     public $id_customer;
+    public $token;
     public $name_customer;
     public $id_product;
     public $product_title;

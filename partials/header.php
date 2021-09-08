@@ -14,6 +14,7 @@ require_once 'config.php';
 <?php if($_SESSION['token']): ?>
    <div class="main-menu">
        <a href="<?=$base;?>">Home</a>
+       <a href="<?=$base;?>/customerOrders.php">check</a>
        <!-- <a href="<?=$base;?>/editUser.php">Editar perfil</a>
        <a href="<?=$base;?>/login.php">Login</a> -->
        <!-- <a href="<?=$base;?>/customers_list.php">Lista de clientes</a>

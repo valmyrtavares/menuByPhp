@@ -175,3 +175,26 @@ Depois disso tenho que tratar do login do customer, em que condições ele se da
  que pertencer ao request, apesar dele ser mandado na hora da criação ou identificação do cliente. Então a solução
  que eu encontrei por enquanto é guardar o número das mesa dentro de uma session, para utilizá-lo no meomento
  de ser feito o primeiro pedido FUNCIONOU
+
+ NÃO ESQUEÇA DE POR A COLUNA TOKEN DENTRO DA TABELA REQUEST NO LOCAL WEB
+
+ Eu implementei uma tela de pedidos para o cliente. ELe ao clicar tem uma pequena tela
+ que nostra o que ele pediu o valor e o total daquilo que ele pediu. Eu usei a mesma feature
+ que está nos botões do menu. Que é o data-type o problema é que ele era um handle para disparar
+ o javascript e também sustentava o css. Eu passei toda a parte de css do data-type para a classe menu-button
+ e deixei o data-type só para controlar a abertura e o fechamento dos menus. inclusive do menu do cliente que 
+ mostras e esconde o andamento dos seus pedidos. Essa tela tem o nome de customer orders e eu adotei como 
+ um partials que mostra e some dentro do próprio index. Eu não estilizei essa tela, de forma definitiva, apenas copiei
+ o que já tinha na tela de lista de clientes Customer_list e implementei para que trouxesse os 
+ pedidos dasquele cliente que tem o session funcionando. Eu estou usando e cruzando as ferramentas
+ que eu mesmo ja´tinha feito. OUtro feito é que essa tela além de trazer os produtos e os preços
+ também traz o valor final da brincadeira. Essa lógica eu fiz com php mesmo e está na própria tela
+
+ Fiz uns ajustes no tamanho das letras do header, porque os menus não são definitivos. Eu apenas
+ estou usando esse menu para ter mais agilidade no meu desenvolvimento. 
+
+ O retorno dos pedidos dasquele cliente específico se das através do token dele pra isso funcionar 
+ eu tive que implementar no model request outra coluna que possui o token do cliente que fez o pedido e 
+ a partir das eu consigo trazer os pedidos dasquele cliente. O problema é que alés disso eu terei que fazer mais uma coluna
+ dizendo quais são os pedidos dasquele dia e os pedidos de outro dia que ele veio para não mistura, mas isso é uma feature 
+ para o futuro. Eu tenho a pretensão de acabar esse projeto ainda essa semana.

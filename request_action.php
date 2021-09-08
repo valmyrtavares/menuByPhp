@@ -28,6 +28,7 @@ if(!$infoCustomer){
     $newRequest->dat = $now;
     $newRequest->mesa = $_SESSION['tableNumber'];
     $newRequest->id_customer = $infoCustomer['idcustumer'];
+    $newRequest->token = $infoCustomer['token'];
     $newRequest->name_customer = $infoCustomer['name'];
     $newRequest->id_product = $id;
     $newRequest->product_title = $title;

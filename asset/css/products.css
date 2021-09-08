@@ -46,7 +46,7 @@
     font-size: 2.5vw;
     color: white;
  }
- [data-type] {
+    .menu-button {
     background: #353535;
     margin: 2px auto;
     width: 90%;
