@@ -214,3 +214,7 @@ Depois disso tenho que tratar do login do customer, em que condições ele se da
  um botão de delete do prato no casao do cliente cancelar. EU ia por esse botão na tela do cliente mas achei ruim. É preferível que 
  ele chame o garçou e peça para cancelar, acho que isso da mais responsabildiade para o cliente, tem que chamar o garon. 
  Eu fiz essa tela fora do index, como uma tela de admin e consegui organizar por mesa, acho que estou chegando a um ponto. 
+
+ Estilizei o modal de detalhes e acrescentei um campo para que o cliente escreva algo sobre o pedido, como 
+ sem colarinho, passado ao ponto etc. A questão é mandar esse dado para o DB. Eu fiz isso e acrescentei uma coluna 
+ do request, que tem que ser feita no localweb

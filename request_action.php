@@ -10,6 +10,7 @@ $infoCustomer = $daoAuth->checkTokenCustomer();
 $id = filter_input(INPUT_POST,'id');
 $price = filter_input(INPUT_POST,'price');
 $title = filter_input(INPUT_POST,'title');
+$comment = filter_input(INPUT_POST, 'comment');
 
 $date = new DateTime();
 $date->setTimezone(new DateTimeZone('America/Sao_Paulo'));
@@ -32,6 +33,7 @@ if(!$infoCustomer){
     $newRequest->name_customer = $infoCustomer['name'];
     $newRequest->id_product = $id;
     $newRequest->product_title = $title;
+    $newRequest->comment = $comment;
     $newRequest->price = $price;
     
     

@@ -22,12 +22,14 @@
         <p><?=$product['subtitle']; ?></p>   
         <div>
             <form  method="POST" action="request_action.php">
-                <input type="hidden" name="id" value="<?=$product['id']?>">
-                <input type="hidden" name="title" value="<?=$product['title']?>">
-                <input type="hidden" name="price" value="<?=$product['price']?>">
-            <button style="background:gree;">Pedir</button>
+                <input class="comment_request" type="text" name="comment" placeholder="lembrete personalizado"/>
+                <input type="hidden" name="id" value="<?=$product['id']?>"/>
+                <input type="hidden" name="title" value="<?=$product['title']?>"/>
+                <input type="hidden" name="price" value="<?=$product['price']?>"/>
+                <input class="btn_request"  type="submit"  value="Pedir"/>
+           
             </form>
-            <button style="background:red;" onClick="onClose()">Fechar</button>
+            <button class="btn_close" style="background:red;" onClick="onClose()">Fechar</button>
         </div> 
     </div>
 

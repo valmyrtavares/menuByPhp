@@ -21,6 +21,7 @@ $num = 0;
         <th>Cliente</th>
         <th>item</th>
         <th>Valor</th>    
+        <th>Detalhe</th>    
         <th>Tempo</th>                 
     </tr>
     <?php foreach($infoRequest as $list):?>
@@ -29,6 +30,7 @@ $num = 0;
         <td><?=$list['name_customer']?></td>   
         <td><?=$list['product_title']?></td>   
         <td>$<?=$list['price']?>,00</td>   
+        <td><?=$list['comment']?></td>   
         <td><?=$list['dat']?></td>   
                 
     </tr>

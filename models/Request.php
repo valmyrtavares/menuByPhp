@@ -7,6 +7,7 @@ class Request{
     public $token;
     public $name_customer;
     public $id_product;
+    public $comment;
     public $product_title;
     public $price;
     
