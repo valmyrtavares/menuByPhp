@@ -5,6 +5,8 @@ const modalDetail = document.querySelectorAll(".modal-product")
 
 
 
+
+
 // function showHide(){       
 //     console.log(key)
 //      key.forEach(item =>{

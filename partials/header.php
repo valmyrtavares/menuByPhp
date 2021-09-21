@@ -11,8 +11,9 @@ require_once 'config.php';
     <title>Menu</title>
 </head>
 <body>
-<?php if($_SESSION['token']): ?>
-   <div class="main-menu">
+    <?php if($_SESSION['token']): ?>
+        <button data-btn="mobile"></button>
+     <div class="main-menu">
        <a href="<?=$base;?>">Home</a>
        <a href="<?=$base?>/waitersPanel.php">Painel do garçon</a>
        <!-- <a href="<?=$base;?>/customerOrders.php">check</a> -->

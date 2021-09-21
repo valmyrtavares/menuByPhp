@@ -220,3 +220,5 @@ Depois disso tenho que tratar do login do customer, em que condições ele se da
  do request, que tem que ser feita no localweb
 
  Foi concertado a parte o as telas de login e os botões
+
+ Foi inserido no mobile um botão hanburguer para gerenciar o menu do admin no mobile

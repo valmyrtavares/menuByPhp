@@ -215,3 +215,19 @@ color:white;
 font: 15px sans-serif;
 cursor:pointer
 }
+
+[data-btn="mobile"]{
+    display:none;  
+}
+
+
+    [data-btn="mobile"]::before{      
+        content: '';
+        width: 32px;
+        height: 2px;
+        display: inline-block;
+        background: #fff;
+        margin-right: 4px;
+        box-shadow: 0 8px #fff, 0 -9px #fff;
+    }
+
