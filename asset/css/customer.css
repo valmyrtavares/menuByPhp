@@ -1,6 +1,6 @@
 .form-send div{
     display:flex;
-    width: 50%;
+    width: 100%;
 }
 .form-send div input{
    flex:1;

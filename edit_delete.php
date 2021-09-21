@@ -24,7 +24,7 @@ require 'partials/header.php'
         <label>Imagem de Cabeçario   </label>
             <input type="file" name="cover"/>
             <input type="submit" value="enviar">
-            <img src="media/products/<?=$_SESSION['cover']?>"/>     
+            <!-- <img src="<?=$base?>/media/products/<?=$mainImg['img'];?>" alt="imagem principal"/>      -->
     </form>
 </div>
 

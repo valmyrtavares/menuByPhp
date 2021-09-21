@@ -30,13 +30,13 @@ if(!$_SESSION['tokenCustumer'] && !$_SESSION['token']){
 <div  class="logo-container">
   <img src="<?=$base?>/media/products/<?=$mainImg['img'];?>" alt="cover"/>
    <?php if($_SESSION['tokenCustumer']): ?>
-    <p data-type style="color:white;">Ola <?= $infoCustomer['name']; ?> Acompanhe seus pedidos aqui!!</p>
+    <p data-type class="greeting_customer">Ola <?= $infoCustomer['name']; ?> Acompanhe seus pedidos aqui!!</p>
     <div class="hide">
     <?php require 'partials/customerOrders.php'?>; 
     </div>
     <?php endif ?> 
 </div>
-<?php if($_SESSION['nocustomer']):?>
+<?php if(!empty($_SESSION['nocustomer'])):?>
     <h2 class="warning"><?= $_SESSION['nocustomer'];?></h2>
     <?= $_SESSION['nocustomer']=""?>
 <?php endif; ?>

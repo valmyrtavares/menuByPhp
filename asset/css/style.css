@@ -58,8 +58,8 @@
 
 }
 .modal-product img{
-    width: 50%;
-    margin: 41px 25%;
+    width: 44%;
+    margin: 5px 28%;
     position: relative;
 }
 .modal-product h1{
@@ -74,7 +74,7 @@
     text-align: center;
     padding: 5px;
     font: 17px sans-serif;
-    background: #fadf1280;
+    background: #fadf12e0;
     position: relative;
 }
 .modal-product div{  
@@ -209,4 +209,9 @@ body{
     margin:25px auto;
     font-family: sans-serif;
     font-size:20px;
+}
+.greeting_customer{
+color:white;
+font: 15px sans-serif;
+cursor:pointer
 }

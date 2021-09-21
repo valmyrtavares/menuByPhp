@@ -18,8 +18,6 @@
 
     <div  class="modal-product ">
         <h1 class="teste-produtos"> <?= $product['title']; ?> </h1>
-        <img src="<?=$base;?>/media/products/<?=$product['img']?>" alt="teste"/>
-        <p><?=$product['subtitle']; ?></p>   
         <div>
             <form  method="POST" action="request_action.php">
                 <input class="comment_request" type="text" name="comment" placeholder="lembrete personalizado"/>
@@ -31,6 +29,8 @@
             </form>
             <button class="btn_close" style="background:red;" onClick="onClose()">Fechar</button>
         </div> 
+        <img src="<?=$base;?>/media/products/<?=$product['img']?>" alt="teste"/>
+        <p><?=$product['subtitle']; ?></p>   
     </div>
 
     <!-- Esse é um texto fake que está aqui para preencher mais ou menos o espaço que os chefes de restaurante terão para usar dentro do aplicativo

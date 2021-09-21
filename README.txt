@@ -218,3 +218,5 @@ Depois disso tenho que tratar do login do customer, em que condições ele se da
  Estilizei o modal de detalhes e acrescentei um campo para que o cliente escreva algo sobre o pedido, como 
  sem colarinho, passado ao ponto etc. A questão é mandar esse dado para o DB. Eu fiz isso e acrescentei uma coluna 
  do request, que tem que ser feita no localweb
+
+ Foi concertado a parte o as telas de login e os botões

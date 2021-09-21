@@ -3,16 +3,18 @@ require 'partials/header.php';
 $table = filter_input(INPUT_GET, 'mesa');
 echo $table;
 
+
 ?>
+
 <div class="content-form-login-customer" style="margin-bottom:70vh;">
     <p>Se já é nosso cliente preencha seu número. Senão cadastre-se e ganhe uma bebida gratis</p>
     <form class="form-send" method="POST" action="login_action.php" >
 
-        <?php if($_SESSION['nophone']): ?>
-            <p style="color:red"><?=$_SESSION['nophone'];
-            $_SESSION['nophone'] = "";            
-            ?></p>
+        <?php if(!empty($_SESSION['nophone'])): ?>
+            <p style="color:red"><?=$_SESSION['nophone'];?> </p>
+            <?=$_SESSION['nophone'] = ""; ?>                
         <?php endif; ?>
+
                 <label>Numero do Celular</label>
                 <input type="text" id="phone-mask" name="phone"/>   
                 <input type="hidden" name="type" value="client"/>

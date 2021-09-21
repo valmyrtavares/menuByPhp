@@ -14,7 +14,7 @@ $table = filter_input(INPUT_GET, 'mesa')
         <?=$_SESSION['registerphone']=" ";?>
     </div>
     <?php endif; ?>
-    <?php echo"Essa é a Mesa = ".$table;?>
+    <!-- <?php echo"Essa é a Mesa = ".$table;?> -->
     <form class="form-send" method="POST" action="signup_action.php" >
             <label>Nome</label>
             <input type="text" name="name"/>
@@ -29,7 +29,7 @@ $table = filter_input(INPUT_GET, 'mesa')
             <input type="hidden" name="table" value="<?=$table?>"/> 
                   
            
-            <div style="display:flex; width:70%">
+            <div >
               <input type="submit" value="Enviar">
               <input type="submit" value="Pular">
             </div>

@@ -36,9 +36,11 @@ font-size: 5vw;
 }
 
 .list-customer-content{
-    width: 74%;
-    margin: 10px 13%;
-    text-align: center;
+  width: 95%;
+  margin: 10px 2%;
+  text-align: center;
+  font: 15px sans-serif;
+  padding:2px;
 }
 
 .list-customer-content table {
@@ -50,7 +52,7 @@ font-size: 5vw;
   .list-customer-content table td, th {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 8px;
+    padding: 2px;
   }
   tr:nth-child(even) {
     background-color: #dddddd;
@@ -92,8 +94,10 @@ font-size: 5vw;
   .content-form-login-customer{
     width: 60%;
     margin: 10px auto;
-    background-color: rgb(167, 164, 164, .3);
+    background-color: rgb(99 91 91 / 98%);
     padding: 10px;
+    max-width: 430px;
+    transform: translate(0px, 118px);
 }
 .content-form-login-customer p, label{
   color:white;
@@ -106,7 +110,18 @@ font-size: 5vw;
   font-size:18px;
 }
 .content-form-login-customer input{
-  width: 60%;
-  margin: 10px 20%;
+  width: 70%;
+  margin: 10px 15%;
   font-size:18px;
 }
+.content-form-login-customer .form-send div{
+width: 100%; 
+display:flex;
+}
+
+.content-form-login-customer .form-send div input{
+    width: 40%;
+    width: 65%;
+    padding: 15px 25px;
+    font-size:18px;
+  }
