@@ -1,3 +1,64 @@
+Prato do dia
+http://pratododia.pessoal.ws/
+
+Esse é um projeto desenvolvido com php, mysql e javascript, preferencialmente mobile first para o client e desktop para 
+ admin. Trata-se de um cardápio digital, com os produtos divididos e separados em menus e submenus, e com a apresentação 
+ dos pratos principais em um carrossel de imagens. Onde cada prato pode ser apresentado em destaque se clicado.
+
+A proposta é um aplicativo que forneça total autonomia ao admnistrador, com um crud completo, e ainda com a possibilidade
+ de publicar e retirar os seus principais pratos da sugestão do chef (Carrossel de produtos) com um check de formulário. 
+
+O aplicativo tem dois tipos de login, um para os clientes que podem ou não logar ou se cadastrar. Se optarem por esse 
+caminho são saldados pelo nome e tem a possibilidade de acompanhar os pratos pedidos e o valor da conta no seu próprio 
+celular, clicando na saudação. Caso optem por pular o login e o cadastro são tratados como anónimos mas ainda sim,
+ dispõe da mesmas funcionalidades.
+
+ No caso dos clientes cadastrados eles deixam seus dados no DB do admin, como telefone, data de aniversário 
+ entre outros, que podem ser usados pelo administrador para promoções e campanhas de marketing. 
+
+O admin loga com um botão que fica no footer do site e abre um menu, para os campos de enviar pratos novos,
+  lista de clientes, painel de pedidos feitos, e painel do garçon que acompanha os pedidos da mesa em tempo 
+  real. O admn se adapta também para mobile mas tem uma apresentação preferencialmente em desktop 
+
+login client default   celular 11 777777777
+login admin default   email: admin@admin.com  senha 12345
+Projeto públicado
+http://pratododia.pessoal.ws/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Esse foi a implementação de subir arquivos redimencionar e deletá-los tanto do banco de dados 
 quanto da pasta do código fonte.
 1 Agora a referencia das imagens é o caminho dele e o nome do arquivo, isso teve que ser
